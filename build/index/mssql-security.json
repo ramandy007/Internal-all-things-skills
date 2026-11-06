@@ -1,0 +1,91 @@
+{
+  "skill": "mssql-security",
+  "title": "Microsoft SQL Server Attacks",
+  "description": "Attack and audit Microsoft SQL Server: enumeration, audit checks, credential harvesting (linked servers, logins, SQL agent jobs), linked-database crawling, and OS command execution via xp_cmdshell, OLE automation and CLR assemblies. Use when MSSQL is reachable with credentials or integrated authentication, when you need a command-execution path from a database, or when reviewing MSSQL configuration.",
+  "references": [
+    {
+      "ref": "references/mssql-enumeration.md",
+      "file": "mssql-enumeration.md",
+      "title": "MSSQL - Database Enumeration",
+      "source": "docs/databases/mssql-enumeration.md",
+      "lines": 168,
+      "tokens_est": 1167,
+      "headings": [
+        "Summary",
+        "Tools",
+        "Identify Instances and Databases",
+        "Identify Users and Roles",
+        "Identify Sensitive Information",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/mssql-audit-checks.md",
+      "file": "mssql-audit-checks.md",
+      "title": "MSSQL - Audit Checks",
+      "source": "docs/databases/mssql-audit-checks.md",
+      "lines": 68,
+      "tokens_est": 480,
+      "headings": [
+        "Summary",
+        "Impersonation Opportunities",
+        "Trustworthy Databases"
+      ]
+    },
+    {
+      "ref": "references/mssql-credentials.md",
+      "file": "mssql-credentials.md",
+      "title": "MSSQL - Credentials",
+      "source": "docs/databases/mssql-credentials.md",
+      "lines": 103,
+      "tokens_est": 987,
+      "headings": [
+        "Summary",
+        "MSSQL Accounts and Hashes",
+        "List Credentials on the SQL Server",
+        "Proxy Account Context",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/mssql-linked-database.md",
+      "file": "mssql-linked-database.md",
+      "title": "MSSQL - Linked Database",
+      "source": "docs/databases/mssql-linked-database.md",
+      "lines": 109,
+      "tokens_est": 1195,
+      "headings": [
+        "Summary",
+        "Find Trusted Link",
+        "Execute Query Through The Link",
+        "Crawl Links for Instances in the Domain",
+        "Crawl Links for a Specific Instance",
+        "Query Version of Linked Database",
+        "Execute Procedure on Linked Database",
+        "Determine Names of Linked Databases",
+        "Determine All the Tables Names from a Selected Linked Database",
+        "Gather the Top 5 Columns from a Selected Linked Table",
+        "Gather Entries from a Selected Linked Column"
+      ]
+    },
+    {
+      "ref": "references/mssql-command-execution.md",
+      "file": "mssql-command-execution.md",
+      "title": "MSSQL - Command Execution",
+      "source": "docs/databases/mssql-command-execution.md",
+      "lines": 316,
+      "tokens_est": 2678,
+      "headings": [
+        "Summary",
+        "Command Execution via xp_cmdshell",
+        "Extended Stored Procedure",
+        "CLR Assemblies",
+        "OLE Automation",
+        "Agent Jobs",
+        "External Scripts",
+        "References"
+      ]
+    }
+  ],
+  "total_tokens_est": 6507
+}

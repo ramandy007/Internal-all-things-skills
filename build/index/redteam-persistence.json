@@ -1,0 +1,87 @@
+{
+  "skill": "redteam-persistence",
+  "title": "Persistence (Windows, Linux, RDP)",
+  "description": "Establish persistence on Windows, Linux and RDP sessions: registry, scheduled tasks, services, WMI, startup folders, DLL search order, domain-level persistence (GPO, SID history, AdminSDHolder, DCShadow), and Linux cron/systemd/SSH backdoors. Use after achieving access, when you must survive reboots and credential rotation, or when reviewing persistence coverage for detection.",
+  "references": [
+    {
+      "ref": "references/windows-persistence-user.md",
+      "file": "windows-persistence-user.md",
+      "title": "Windows - Persistence",
+      "source": "docs/redteam/persistence/windows-persistence.md",
+      "lines": 330,
+      "tokens_est": 3385,
+      "headings": [
+        "Summary",
+        "Tools",
+        "Hide Your Binary",
+        "Disable Antivirus and Security",
+        "Simple User"
+      ]
+    },
+    {
+      "ref": "references/windows-persistence-elevated.md",
+      "file": "windows-persistence-elevated.md",
+      "title": "Windows Persistence - Service Land and Elevated",
+      "source": "docs/redteam/persistence/windows-persistence.md",
+      "lines": 306,
+      "tokens_est": 3665,
+      "headings": [
+        "Serviceland",
+        "Elevated"
+      ]
+    },
+    {
+      "ref": "references/windows-persistence-domain.md",
+      "file": "windows-persistence-domain.md",
+      "title": "Windows Persistence - Domain",
+      "source": "docs/redteam/persistence/windows-persistence.md",
+      "lines": 83,
+      "tokens_est": 1185,
+      "headings": [
+        "Domain",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/linux-persistence.md",
+      "file": "linux-persistence.md",
+      "title": "Linux - Persistence",
+      "source": "docs/redteam/persistence/linux-persistence.md",
+      "lines": 342,
+      "tokens_est": 3189,
+      "headings": [
+        "Summary",
+        "Basic Reverse Shell",
+        "Add a Root User",
+        "SUID Binary",
+        "Crontab",
+        "Bash Configuration File",
+        "Startup Service",
+        "Systemd User Service",
+        "Systemd Timer File",
+        "Message of the Day",
+        "User Startup File",
+        "Udev Rule",
+        "APT Configuration",
+        "SSH Configuration",
+        "Git Configuration",
+        "Additional Persistence Options",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/rdp-persistence.md",
+      "file": "rdp-persistence.md",
+      "title": "RDP - Persistence",
+      "source": "docs/redteam/persistence/rdp-persistence.md",
+      "lines": 98,
+      "tokens_est": 1217,
+      "headings": [
+        "RDP Backdoor",
+        "RDP Shadowing",
+        "References"
+      ]
+    }
+  ],
+  "total_tokens_est": 12641
+}

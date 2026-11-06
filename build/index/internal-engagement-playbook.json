@@ -1,0 +1,78 @@
+{
+  "skill": "internal-engagement-playbook",
+  "title": "Internal Engagement Playbook",
+  "description": "Plan and run an authorized internal-network penetration test end to end: scoping, host and network discovery, Active Directory and cloud attack-surface mapping, phase-by-phase checklists, evidence collection, and vulnerability report writing. Use when starting an internal engagement, deciding the next phase of an attack path, planning recon coverage, writing a pentest report or finding, or when source-code review or mobile-app testing is part of the engagement. Routes to the specialized skills in this library (Active Directory, cloud, red team, C2, containers, MSSQL, CI/CD).",
+  "references": [
+    {
+      "ref": "references/bug-hunting-methodology.md",
+      "file": "bug-hunting-methodology.md",
+      "title": "Bug Hunting Methodology",
+      "source": "docs/methodology/bug-hunting-methodology.md",
+      "lines": 310,
+      "tokens_est": 3048,
+      "headings": [
+        "Passive Recon",
+        "Active Recon",
+        "Looking for Web Vulnerabilities",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/vulnerability-reports.md",
+      "file": "vulnerability-reports.md",
+      "title": "Vulnerability Reports",
+      "source": "docs/methodology/vulnerability-reports.md",
+      "lines": 115,
+      "tokens_est": 1898,
+      "headings": [
+        "Tools",
+        "Vulnerability Report Structure",
+        "Vulnerability Details Structure",
+        "General Guidelines",
+        "Common Mistakes",
+        "Template Improvement",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/source-code-analysis.md",
+      "file": "source-code-analysis.md",
+      "title": "Source Code Analysis",
+      "source": "docs/methodology/source-code-analysis.md",
+      "lines": 162,
+      "tokens_est": 1477,
+      "headings": [
+        "AI Analysis",
+        "Semgrep",
+        "SonarQube",
+        "Psalm",
+        "CodeQL",
+        "Snyk",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/android-applications.md",
+      "file": "android-applications.md",
+      "title": "Android Application",
+      "source": "docs/methodology/android-applications.md",
+      "lines": 675,
+      "tokens_est": 6743,
+      "headings": [
+        "Lab",
+        "Extract APK",
+        "Static Analysis",
+        "APK Patching",
+        "Dynamic Analysis",
+        "SSL Pinning Bypass",
+        "Root Detection Bypass",
+        "Android Debug Bridge",
+        "Android Virtual Device",
+        "Unlock Bootloader",
+        "Android XML",
+        "References"
+      ]
+    }
+  ],
+  "total_tokens_est": 13166
+}

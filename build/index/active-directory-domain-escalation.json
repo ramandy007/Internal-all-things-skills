@@ -1,0 +1,138 @@
+{
+  "skill": "active-directory-domain-escalation",
+  "title": "Active Directory Domain and Forest Escalation",
+  "description": "Escalate from a foothold to domain or forest compromise: ZeroLogon, PrintNightmare, NoPAC/sAMAccountName spoofing, MS14-068, PrivExchange, ResetNightmare, SID-history injection, trust-key and inter-realm ticket abuse, PAM trusts and ADFS Golden SAML. Use when you have low-privileged domain access and need a path to Domain Admin or forest takeover, when a trust relationship or ADFS federation exists, or when assessing unpatched legacy domain-controller CVEs.",
+  "references": [
+    {
+      "ref": "references/zerologon.md",
+      "file": "zerologon.md",
+      "title": "ZeroLogon",
+      "source": "docs/active-directory/CVE/ZeroLogon.md",
+      "lines": 113,
+      "tokens_est": 1057,
+      "headings": [
+        "References"
+      ]
+    },
+    {
+      "ref": "references/printnightmare.md",
+      "file": "printnightmare.md",
+      "title": "PrintNightmare",
+      "source": "docs/active-directory/CVE/PrintNightmare.md",
+      "lines": 114,
+      "tokens_est": 1264,
+      "headings": [
+        "References"
+      ]
+    },
+    {
+      "ref": "references/nopac.md",
+      "file": "nopac.md",
+      "title": "NoPAC / samAccountName Spoofing",
+      "source": "docs/active-directory/CVE/NoPAC.md",
+      "lines": 166,
+      "tokens_est": 2297,
+      "headings": [
+        "References"
+      ]
+    },
+    {
+      "ref": "references/ms14-068.md",
+      "file": "ms14-068.md",
+      "title": "MS14-068 Checksum Validation",
+      "source": "docs/active-directory/CVE/MS14-068.md",
+      "lines": 85,
+      "tokens_est": 1009,
+      "headings": [
+        "Mitigations",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/privexchange.md",
+      "file": "privexchange.md",
+      "title": "PrivExchange",
+      "source": "docs/active-directory/CVE/PrivExchange.md",
+      "lines": 61,
+      "tokens_est": 718,
+      "headings": [
+        "References"
+      ]
+    },
+    {
+      "ref": "references/resetnightmare.md",
+      "file": "resetnightmare.md",
+      "title": "ResetNightmare",
+      "source": "docs/active-directory/CVE/ResetNightmare.md",
+      "lines": 57,
+      "tokens_est": 875,
+      "headings": [
+        "References"
+      ]
+    },
+    {
+      "ref": "references/trust-relationship.md",
+      "file": "trust-relationship.md",
+      "title": "Trust - Relationship",
+      "source": "docs/active-directory/trust-relationship.md",
+      "lines": 53,
+      "tokens_est": 610,
+      "headings": [
+        "Enumerate trusts between domains",
+        "Exploit trusts between domains",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/sid-history.md",
+      "file": "sid-history.md",
+      "title": "Child Domain to Forest Compromise - SID Hijacking",
+      "source": "docs/active-directory/trust-sid-hijacking.md",
+      "lines": 33,
+      "tokens_est": 265,
+      "headings": [
+        "References"
+      ]
+    },
+    {
+      "ref": "references/trust-ticket.md",
+      "file": "trust-ticket.md",
+      "title": "Forest to Forest Compromise - Trust Ticket",
+      "source": "docs/active-directory/trust-ticket.md",
+      "lines": 58,
+      "tokens_est": 632,
+      "headings": [
+        "Dumping Trust Passwords (trust keys)",
+        "Create a Forged Trust Ticket (inter-realm TGT)",
+        "Use the Trust Ticket file to get a Service Ticket",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/pam-trust.md",
+      "file": "pam-trust.md",
+      "title": "Trust - Privileged Access Management",
+      "source": "docs/active-directory/trust-pam.md",
+      "lines": 59,
+      "tokens_est": 652,
+      "headings": [
+        "References"
+      ]
+    },
+    {
+      "ref": "references/adfs-golden-saml.md",
+      "file": "adfs-golden-saml.md",
+      "title": "Active Directory - Federation Services",
+      "source": "docs/active-directory/ad-adfs-federation-services.md",
+      "lines": 135,
+      "tokens_est": 1777,
+      "headings": [
+        "ADFS - DKM Master Key",
+        "ADFS - Trust Relationship",
+        "ADFS - Golden SAML",
+        "References"
+      ]
+    }
+  ],
+  "total_tokens_est": 11156
+}

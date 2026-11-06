@@ -1,0 +1,321 @@
+{
+  "skill": "azure-entra-security",
+  "title": "Azure and Entra ID Security",
+  "description": "Assess and attack Microsoft Azure and Entra ID (Azure AD): token and refresh-token abuse, enumeration with AzureHound/ROADtools, IAM objects (users, devices, service principals, managed identities), Conditional Access bypass, AD Connect and cloud sync, Key Vault, Runbooks, Intune, Storage Blob, Web Apps, Container Registry, Azure DevOps, Office 365 phishing and persistence, and aka.ms shortcuts. Use when an engagement includes Azure or Entra ID, when you hold a token or credentials, or when reviewing cloud tenant configuration.",
+  "references": [
+    {
+      "ref": "references/azure-enumeration.md",
+      "file": "azure-enumeration.md",
+      "title": "Azure AD - Enumerate",
+      "source": "docs/cloud/azure/azure-enumeration.md",
+      "lines": 259,
+      "tokens_est": 3014,
+      "headings": [
+        "Azure AD - Collectors",
+        "Azure AD - User Enumeration",
+        "Azure Services Enumeration",
+        "Multi Factor Authentication",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/azure-requirements.md",
+      "file": "azure-requirements.md",
+      "title": "Azure - Requirements",
+      "source": "docs/cloud/azure/azure-requirements.md",
+      "lines": 39,
+      "tokens_est": 549,
+      "headings": [
+        "Pentest Requirements",
+        "Powershell and Native Modules",
+        "Terminology",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/azure-access-and-token.md",
+      "file": "azure-access-and-token.md",
+      "title": "Azure AD - Access and Tokens",
+      "source": "docs/cloud/azure/azure-access-and-token.md",
+      "lines": 429,
+      "tokens_est": 4448,
+      "headings": [
+        "Connection",
+        "Access Token",
+        "Refresh Token",
+        "FOCI Refresh Token",
+        "Primary Refresh Token",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/azure-iam.md",
+      "file": "azure-iam.md",
+      "title": "Azure AD - IAM",
+      "source": "docs/cloud/azure/azure-devices-users-sp.md",
+      "lines": 258,
+      "tokens_est": 2802,
+      "headings": [
+        "Users",
+        "Devices",
+        "Service Principals",
+        "Other",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/conditional-access-policy.md",
+      "file": "conditional-access-policy.md",
+      "title": "Azure AD - Conditional Access Policy",
+      "source": "docs/cloud/azure/azure-ad-conditional-access-policy.md",
+      "lines": 95,
+      "tokens_est": 1406,
+      "headings": [
+        "Enumerate Conditional Access Policies",
+        "Bypassing CAP by faking device compliance",
+        "Bypassing CAP with device.trustType",
+        "Bypassing CAP with user agent",
+        "Bypassing CAP with location",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/ad-connect-cloud-sync.md",
+      "file": "ad-connect-cloud-sync.md",
+      "title": "Azure AD - AD Connect and Cloud Sync",
+      "source": "docs/cloud/azure/azure-ad-connect.md",
+      "lines": 130,
+      "tokens_est": 1940,
+      "headings": [
+        "Password Hash Synchronization",
+        "Pass-Through Authentication",
+        "Federation",
+        "AD Connect - Credentials",
+        "AD Connect - DCSync with MSOL Account",
+        "AD Connect - Seamless Single Sign On Silver Ticket",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/azure-persistence.md",
+      "file": "azure-persistence.md",
+      "title": "Azure AD - Persistence",
+      "source": "docs/cloud/azure/azure-persistence.md",
+      "lines": 72,
+      "tokens_est": 764,
+      "headings": [
+        "Add Secrets to Application",
+        "Add Service Principal",
+        "Add User to Group",
+        "PowerShell Profile Backdoor Using KFM",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/azure-phishing.md",
+      "file": "azure-phishing.md",
+      "title": "Azure AD - Phishing",
+      "source": "docs/cloud/azure/azure-phishing.md",
+      "lines": 155,
+      "tokens_est": 2125,
+      "headings": [
+        "Illicit Consent Grant",
+        "Device Code Phishing",
+        "Phishing with Evilginx2",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/keyvault.md",
+      "file": "keyvault.md",
+      "title": "Azure Services - KeyVault",
+      "source": "docs/cloud/azure/azure-services-keyvault.md",
+      "lines": 44,
+      "tokens_est": 375,
+      "headings": [
+        "Access Token",
+        "Query Secrets",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/runbook-automation.md",
+      "file": "runbook-automation.md",
+      "title": "Azure Services - Runbook and Automation",
+      "source": "docs/cloud/azure/azure-services-runbook.md",
+      "lines": 88,
+      "tokens_est": 895,
+      "headings": [
+        "Runbook",
+        "Automation Account",
+        "Desired State Configuration",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/intune.md",
+      "file": "intune.md",
+      "title": "Azure Services - Microsoft Intune",
+      "source": "docs/cloud/azure/azure-services-microsoft-intune.md",
+      "lines": 81,
+      "tokens_est": 999,
+      "headings": [
+        "Intunes Administration",
+        "Intune Scripts",
+        "LAPS",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/storage-blob.md",
+      "file": "storage-blob.md",
+      "title": "Azure Services - Storage Blob",
+      "source": "docs/cloud/azure/azure-services-storage-blob.md",
+      "lines": 79,
+      "tokens_est": 787,
+      "headings": [
+        "Enumerate blobs",
+        "List and download blobs",
+        "SAS URL",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/virtual-machine.md",
+      "file": "virtual-machine.md",
+      "title": "Azure Services - Virtual Machine",
+      "source": "docs/cloud/azure/azure-services-virtual-machine.md",
+      "lines": 54,
+      "tokens_est": 556,
+      "headings": [
+        "RunCommand",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/web-apps.md",
+      "file": "web-apps.md",
+      "title": "Azure Services - Web Apps",
+      "source": "docs/cloud/azure/azure-services-web-apps.md",
+      "lines": 52,
+      "tokens_est": 572,
+      "headings": [
+        "List Web App",
+        "Execute Commands",
+        "SSH Connection",
+        "Kudu",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/container-registry.md",
+      "file": "container-registry.md",
+      "title": "Azure Services - Container Registry",
+      "source": "docs/cloud/azure/azure-services-container-registry.md",
+      "lines": 56,
+      "tokens_est": 460,
+      "headings": [
+        "Enumerate",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/azure-devops.md",
+      "file": "azure-devops.md",
+      "title": "Azure Services - Azure DevOps",
+      "source": "docs/cloud/azure/azure-services-devops.md",
+      "lines": 167,
+      "tokens_est": 2011,
+      "headings": [
+        "Authentication",
+        "Recon",
+        "Privilege Escalation",
+        "Persistence",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/application-proxy.md",
+      "file": "application-proxy.md",
+      "title": "Azure Services - Application Proxy",
+      "source": "docs/cloud/azure/azure-services-application-proxy.md",
+      "lines": 19,
+      "tokens_est": 206,
+      "headings": [
+        "Enumerate",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/application-endpoint.md",
+      "file": "application-endpoint.md",
+      "title": "Azure Services - Application Endpoint",
+      "source": "docs/cloud/azure/azure-services-application-endpoint.md",
+      "lines": 22,
+      "tokens_est": 197,
+      "headings": [
+        "Enumerate",
+        "Access",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/deployment-template.md",
+      "file": "deployment-template.md",
+      "title": "Azure Services - Deployment Template",
+      "source": "docs/cloud/azure/azure-services-deployment-template.md",
+      "lines": 24,
+      "tokens_est": 193,
+      "headings": [
+        "References"
+      ]
+    },
+    {
+      "ref": "references/dns-suffix-domains.md",
+      "file": "dns-suffix-domains.md",
+      "title": "Azure Services - DNS Suffix",
+      "source": "docs/cloud/azure/azure-services-web-domains.md",
+      "lines": 159,
+      "tokens_est": 2637,
+      "headings": [
+        "DNS Tables",
+        "DNS Tables by Category",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/office-365.md",
+      "file": "office-365.md",
+      "title": "Azure Services - Office 365",
+      "source": "docs/cloud/azure/azure-services-office-365.md",
+      "lines": 34,
+      "tokens_est": 251,
+      "headings": [
+        "Microsoft Teams Messages",
+        "Outlook Mails",
+        "OneDrive Files",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/aka-ms-shortcuts.md",
+      "file": "aka-ms-shortcuts.md",
+      "title": "aka.ms Shortcuts",
+      "source": "docs/cloud/azure/aka-ms.md",
+      "lines": 104,
+      "tokens_est": 2006,
+      "headings": [
+        "Azure Active Directory - Admins",
+        "Microsoft Admin Portals",
+        "Microsoft Intune Portals",
+        "Microsoft 365 Defender",
+        "Microsoft User Portals",
+        "Identity Protection",
+        "Winget (Windows Package Manager)",
+        "Miscellaneous",
+        "References"
+      ]
+    }
+  ],
+  "total_tokens_est": 29193
+}

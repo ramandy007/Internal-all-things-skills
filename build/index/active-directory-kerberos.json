@@ -1,0 +1,123 @@
+{
+  "skill": "active-directory-kerberos",
+  "title": "Active Directory Kerberos Attacks",
+  "description": "Attack Kerberos in Active Directory: Kerberoasting, AS-REP roasting, Timeroasting, ticket forging (golden, silver, bronze bit), S4U2Self/S4U2Proxy, and unconstrained, constrained and resource-based constrained delegation abuse. Use when you have domain credentials and want service-account or privileged-account hashes, when a host or account is trusted for delegation, when you need to forge, convert or renew tickets, or when explaining Kerberos delegation paths. Covers Rubeus, impacket, NetExec, PowerView and ticket manipulation.",
+  "references": [
+    {
+      "ref": "references/kerberoasting.md",
+      "file": "kerberoasting.md",
+      "title": "Roasting - Kerberoasting",
+      "source": "docs/active-directory/ad-roasting-kerberoasting.md",
+      "lines": 106,
+      "tokens_est": 1445,
+      "headings": [
+        "Kerberoasting Without Pre-Authentication",
+        "Mitigations",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/asrep-roasting.md",
+      "file": "asrep-roasting.md",
+      "title": "Roasting - ASREP Roasting",
+      "source": "docs/active-directory/ad-roasting-asrep.md",
+      "lines": 136,
+      "tokens_est": 1533,
+      "headings": [
+        "Kerberoasting w/o domain account",
+        "CVE-2022-33679",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/timeroasting.md",
+      "file": "timeroasting.md",
+      "title": "Roasting - Timeroasting",
+      "source": "docs/active-directory/ad-roasting-timeroasting.md",
+      "lines": 18,
+      "tokens_est": 283,
+      "headings": [
+        "References"
+      ]
+    },
+    {
+      "ref": "references/tickets.md",
+      "file": "tickets.md",
+      "title": "Kerberos - Tickets",
+      "source": "docs/active-directory/kerberos-tickets.md",
+      "lines": 197,
+      "tokens_est": 2772,
+      "headings": [
+        "Dump Kerberos Tickets",
+        "Replay Kerberos Tickets",
+        "Convert Kerberos Tickets",
+        "Pass-the-Ticket Golden Tickets",
+        "Pass-the-Ticket Silver Tickets",
+        "Pass-the-Ticket Diamond Tickets",
+        "Pass-the-Ticket Sapphire Tickets",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/bronze-bit.md",
+      "file": "bronze-bit.md",
+      "title": "Kerberos - Bronze Bit",
+      "source": "docs/active-directory/kerberos-bronze-bit.md",
+      "lines": 71,
+      "tokens_est": 1006,
+      "headings": [
+        "References"
+      ]
+    },
+    {
+      "ref": "references/s4u.md",
+      "file": "s4u.md",
+      "title": "Kerberos - Service for User Extension",
+      "source": "docs/active-directory/kerberos-s4u.md",
+      "lines": 41,
+      "tokens_est": 625,
+      "headings": [
+        "S4U2self - Privilege Escalation",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/delegation-constrained.md",
+      "file": "delegation-constrained.md",
+      "title": "Kerberos Delegation - Constrained Delegation",
+      "source": "docs/active-directory/kerberos-delegation-constrained.md",
+      "lines": 80,
+      "tokens_est": 743,
+      "headings": [
+        "Identify a Constrained Delegation",
+        "Exploit the Constrained Delegation",
+        "Impersonate a domain user on a resource"
+      ]
+    },
+    {
+      "ref": "references/delegation-unconstrained.md",
+      "file": "delegation-unconstrained.md",
+      "title": "Kerberos Delegation - Unconstrained Delegation",
+      "source": "docs/active-directory/kerberos-delegation-unconstrained.md",
+      "lines": 133,
+      "tokens_est": 1363,
+      "headings": [
+        "SpoolService Abuse with Unconstrained Delegation",
+        "MS-EFSRPC Abuse with Unconstrained Delegation",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/delegation-rbcd.md",
+      "file": "delegation-rbcd.md",
+      "title": "Kerberos Delegation - Resource Based Constrained Delegation",
+      "source": "docs/active-directory/kerberos-delegation-rbcd.md",
+      "lines": 102,
+      "tokens_est": 1371,
+      "headings": [
+        "References"
+      ]
+    }
+  ],
+  "total_tokens_est": 11141
+}

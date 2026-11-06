@@ -1,0 +1,175 @@
+{
+  "skill": "active-directory-enumeration",
+  "title": "Active Directory Enumeration and Recon",
+  "description": "Enumerate an Active Directory domain with PowerView, BloodHound, NetExec, impacket and native Windows tools: users, groups, computers, trusts, GPOs, ACLs/ACEs, AD-integrated DNS, shares, RODC, machine account quota and the AD recycle bin. Use when starting an AD engagement, when mapping domain objects and permissions, when you hold any valid domain credentials or a null session and need to find attack paths, or when reviewing AD security posture. Includes AD operations from Linux (ldapsearch, impacket, netexec, bloodyAD).",
+  "references": [
+    {
+      "ref": "references/domain-enumeration.md",
+      "file": "domain-enumeration.md",
+      "title": "Active Directory - Enumeration",
+      "source": "docs/active-directory/ad-adds-enumerate.md",
+      "lines": 428,
+      "tokens_est": 4416,
+      "headings": [
+        "Using BloodHound",
+        "Using PowerView",
+        "Using AD Module",
+        "User Hunting",
+        "RID cycling",
+        "Other Interesting Commands",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/groups.md",
+      "file": "groups.md",
+      "title": "Active Directory - Groups",
+      "source": "docs/active-directory/ad-adds-groups.md",
+      "lines": 177,
+      "tokens_est": 1680,
+      "headings": [
+        "Dangerous Built-in Groups Usage",
+        "AdminSDHolder Attribute",
+        "DNS Admins Group",
+        "Schema Admins Group",
+        "Backup Operators Group",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/acl-ace.md",
+      "file": "acl-ace.md",
+      "title": "Active Directory - Access Controls ACL/ACE",
+      "source": "docs/active-directory/ad-adds-acl-ace.md",
+      "lines": 370,
+      "tokens_est": 3706,
+      "headings": [
+        "GenericAll/GenericWrite",
+        "WriteDACL",
+        "WriteOwner",
+        "ReadLAPSPassword",
+        "ReadGMSAPassword",
+        "ForceChangePassword",
+        "Organizational Units ACL",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/group-policy-objects.md",
+      "file": "group-policy-objects.md",
+      "title": "Active Directory - Group Policy Objects",
+      "source": "docs/active-directory/ad-adds-group-policy-objects.md",
+      "lines": 165,
+      "tokens_est": 2025,
+      "headings": [
+        "Find vulnerable GPO",
+        "Abuse GPO with SharpGPOAbuse",
+        "Abuse GPO with PowerGPOAbuse",
+        "Abuse GPO with pyGPOAbuse",
+        "Abuse GPO with PowerView",
+        "Abuse GPO with StandIn",
+        "Abuse GPO with GroupPolicyBackdoor",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/ad-from-linux.md",
+      "file": "ad-from-linux.md",
+      "title": "Active Directory - Linux",
+      "source": "docs/active-directory/ad-adds-linux.md",
+      "lines": 233,
+      "tokens_est": 2203,
+      "headings": [
+        "CCACHE ticket reuse from /tmp",
+        "CCACHE ticket reuse from keyring",
+        "CCACHE ticket reuse from SSSD KCM",
+        "CCACHE ticket reuse from keytab",
+        "Extract accounts from /etc/krb5.keytab",
+        "Extract accounts from /etc/sssd/sssd.conf",
+        "Extract accounts from SSSD keyring",
+        "SSH GSSAPI",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/machine-account-quota.md",
+      "file": "machine-account-quota.md",
+      "title": "Active Directory - Machine Account Quota",
+      "source": "docs/active-directory/ad-adds-machineaccountquota.md",
+      "lines": 48,
+      "tokens_est": 805,
+      "headings": [
+        "Machine Account Quota Process",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/recycle-bin.md",
+      "file": "recycle-bin.md",
+      "title": "Active Directory - Recycle Bin",
+      "source": "docs/active-directory/ad-adds-recycle-bin.md",
+      "lines": 84,
+      "tokens_est": 755,
+      "headings": [
+        "Details",
+        "Deleted Objects",
+        "Restore Objects",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/rodc.md",
+      "file": "rodc.md",
+      "title": "Active Directory - Read Only Domain Controller",
+      "source": "docs/active-directory/ad-adds-rodc.md",
+      "lines": 70,
+      "tokens_est": 895,
+      "headings": [
+        "RODC Golden Ticket",
+        "RODC Key List Attack",
+        "RODC Computer Object",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/adidns.md",
+      "file": "adidns.md",
+      "title": "Active Directory - Integrated DNS - ADIDNS",
+      "source": "docs/active-directory/ad-integrated-dns.md",
+      "lines": 82,
+      "tokens_est": 800,
+      "headings": [
+        "LDAP-Based (Require authentication)",
+        "Dynamic Updates (Doesn't require authentication)",
+        "DNS Reconnaissance",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/shares.md",
+      "file": "shares.md",
+      "title": "Internal - Shares",
+      "source": "docs/active-directory/internal-shares.md",
+      "lines": 182,
+      "tokens_est": 1537,
+      "headings": [
+        "READ Permission",
+        "WRITE Permission",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/tricks.md",
+      "file": "tricks.md",
+      "title": "Active Directory - Tricks",
+      "source": "docs/active-directory/ad-tricks.md",
+      "lines": 40,
+      "tokens_est": 446,
+      "headings": [
+        "Kerberos Clock Synchronization",
+        "References"
+      ]
+    }
+  ],
+  "total_tokens_est": 19268
+}

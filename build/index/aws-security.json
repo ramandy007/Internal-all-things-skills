@@ -1,0 +1,189 @@
+{
+  "skill": "aws-security",
+  "title": "AWS Security Assessment",
+  "description": "Assess and attack AWS: access-token and key abuse, IAM privilege escalation, IMDSv1/v2 metadata SSRF, S3 bucket exposure, EC2, Lambda, SSM, DynamoDB, Cognito, enumeration and IOC detection. Use when an engagement includes AWS, when you find AWS keys or an SSRF into instance metadata, when reviewing IAM policies for escalation paths, or when triaging AWS incident indicators.",
+  "references": [
+    {
+      "ref": "references/aws-enumeration.md",
+      "file": "aws-enumeration.md",
+      "title": "AWS - Enumerate",
+      "source": "docs/cloud/aws/aws-enumeration.md",
+      "lines": 129,
+      "tokens_est": 1531,
+      "headings": [
+        "Collectors",
+        "AWS - Enumerate IAM permissions",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/aws-access-token.md",
+      "file": "aws-access-token.md",
+      "title": "AWS - Access Token & Secrets",
+      "source": "docs/cloud/aws/aws-access-token.md",
+      "lines": 104,
+      "tokens_est": 1520,
+      "headings": [
+        "URL Services",
+        "Access Key ID & Secret",
+        "Regions",
+        "Gaining AWS Console Access via API Keys",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/aws-iam.md",
+      "file": "aws-iam.md",
+      "title": "AWS - Identity & Access Management",
+      "source": "docs/cloud/aws/aws-iam.md",
+      "lines": 164,
+      "tokens_est": 1620,
+      "headings": [
+        "Listing IAM access Keys",
+        "Listing IAM Users and Groups",
+        "Get IAM Details",
+        "Assume a Specific Role",
+        "Login with MFA",
+        "Shadow Admin",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/aws-metadata-ssrf.md",
+      "file": "aws-metadata-ssrf.md",
+      "title": "AWS - Metadata SSRF",
+      "source": "docs/cloud/aws/aws-metadata.md",
+      "lines": 115,
+      "tokens_est": 1939,
+      "headings": [
+        "Method for Elastic Cloud Compute (EC2)",
+        "Method for Container Service (Fargate)",
+        "AWS API calls that return credentials",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/aws-s3-bucket.md",
+      "file": "aws-s3-bucket.md",
+      "title": "AWS - Service - S3 Buckets",
+      "source": "docs/cloud/aws/aws-s3-bucket.md",
+      "lines": 163,
+      "tokens_est": 1643,
+      "headings": [
+        "Tools",
+        "Credentials and Profiles",
+        "Public S3 Bucket",
+        "Bucket Interations",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/aws-ec2.md",
+      "file": "aws-ec2.md",
+      "title": "AWS - Service - EC2",
+      "source": "docs/cloud/aws/aws-ec2.md",
+      "lines": 127,
+      "tokens_est": 1463,
+      "headings": [
+        "Listing Information About EC2",
+        "Copy EC2 using AMI Image",
+        "Mount EBS volume to EC2 Linux",
+        "Shadow Copy attack",
+        "Access Snapshots",
+        "Instance Connect",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/aws-lambda-apigw.md",
+      "file": "aws-lambda-apigw.md",
+      "title": "AWS - Service - Lambda & API Gateway",
+      "source": "docs/cloud/aws/aws-lambda.md",
+      "lines": 54,
+      "tokens_est": 351,
+      "headings": [
+        "List Lambda Functions",
+        "Extract Function's Code",
+        "List API Gateway",
+        "Listing Information About Endpoints",
+        "Listing API Keys",
+        "Getting Information About A Specific Api Key",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/aws-ssm.md",
+      "file": "aws-ssm.md",
+      "title": "AWS - Service - SSM",
+      "source": "docs/cloud/aws/aws-ssm.md",
+      "lines": 30,
+      "tokens_est": 350,
+      "headings": [
+        "Command execution",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/aws-dynamodb.md",
+      "file": "aws-dynamodb.md",
+      "title": "AWS - Service - DynamoDB",
+      "source": "docs/cloud/aws/aws-dynamodb.md",
+      "lines": 36,
+      "tokens_est": 260,
+      "headings": [
+        "List Tables",
+        "Enumerate Table Content",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/aws-cognito.md",
+      "file": "aws-cognito.md",
+      "title": "AWS - Service - Cognito",
+      "source": "docs/cloud/aws/aws-cognito.md",
+      "lines": 87,
+      "tokens_est": 776,
+      "headings": [
+        "Tools",
+        "Identity Pool ID",
+        "AWS Cognito Commands",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/aws-cli.md",
+      "file": "aws-cli.md",
+      "title": "AWS - CLI",
+      "source": "docs/cloud/aws/aws-cli.md",
+      "lines": 72,
+      "tokens_est": 414,
+      "headings": [
+        "Set up AWS CLI",
+        "Creating Profiles",
+        "Using Profiles"
+      ]
+    },
+    {
+      "ref": "references/aws-ioc-detection.md",
+      "file": "aws-ioc-detection.md",
+      "title": "AWS - IOC & Detections",
+      "source": "docs/cloud/aws/aws-ioc-detection.md",
+      "lines": 39,
+      "tokens_est": 353,
+      "headings": [
+        "CloudTrail",
+        "GuardDuty"
+      ]
+    },
+    {
+      "ref": "references/aws-training.md",
+      "file": "aws-training.md",
+      "title": "AWS - Training",
+      "source": "docs/cloud/aws/aws-training.md",
+      "lines": 10,
+      "tokens_est": 206,
+      "headings": []
+    }
+  ],
+  "total_tokens_est": 12426
+}

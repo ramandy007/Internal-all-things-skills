@@ -1,0 +1,180 @@
+{
+  "skill": "redteam-defense-evasion",
+  "title": "Defense Evasion (AMSI, Defender, EDR)",
+  "description": "Evade Windows and Linux defenses: AMSI bypass, PowerShell and ETW logging evasion, Windows Defender and AppLocker/WDAC bypass, EDR unhooking and direct syscalls, DPAPI secret extraction, proxy traversal and OPSEC failure avoidance. Use when a payload is blocked, when you must reduce telemetry, when dumping DPAPI secrets, or when reviewing OPSEC before an operation.",
+  "references": [
+    {
+      "ref": "references/amsi-bypass-techniques.md",
+      "file": "amsi-bypass-techniques.md",
+      "title": "Windows - AMSI Bypass",
+      "source": "docs/redteam/evasion/windows-amsi-bypass.md",
+      "lines": 299,
+      "tokens_est": 10265,
+      "headings": [
+        "Summary",
+        "List AMSI Providers",
+        "Which Endpoint Protection is Using AMSI",
+        "Patching amsi.dll AmsiScanBuffer by rasta-mouse",
+        "Dont use net webclient",
+        "The Short version of dont use powershell net webclient",
+        "Amsi ScanBuffer Patch",
+        "Forcing an error",
+        "Disable Script Logging",
+        "Amsi Buffer Patch - In memory",
+        "Same as 6 but integer Bytes instead of Base64",
+        "Using Matt Graebers Reflection method",
+        "Using Matt Graebers Reflection method with WMF5 autologging bypass",
+        "Using Matt Graebers second Reflection method",
+        "Using Cornelis de Plaas DLL hijack method",
+        "Using PowerShell version 2"
+      ]
+    },
+    {
+      "ref": "references/amsi-bypass-payload-1.md",
+      "file": "amsi-bypass-payload-1.md",
+      "title": "AMSI Bypass - Nishang Script (Variant 1)",
+      "source": "docs/redteam/evasion/windows-amsi-bypass.md",
+      "lines": 202,
+      "tokens_est": 15904,
+      "headings": [
+        "Nishang all in one"
+      ]
+    },
+    {
+      "ref": "references/amsi-bypass-payload-2.md",
+      "file": "amsi-bypass-payload-2.md",
+      "title": "AMSI Bypass - Nishang Script (Variant 2)",
+      "source": "docs/redteam/evasion/windows-amsi-bypass.md",
+      "lines": 200,
+      "tokens_est": 15898,
+      "headings": []
+    },
+    {
+      "ref": "references/amsi-bypass-variants.md",
+      "file": "amsi-bypass-variants.md",
+      "title": "AMSI Bypass - Additional Variants and References",
+      "source": "docs/redteam/evasion/windows-amsi-bypass.md",
+      "lines": 95,
+      "tokens_est": 807,
+      "headings": [
+        "Adam Chester Patch",
+        "Other interesting AMSI bypass",
+        "AMSI.fail",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/windows-defenses.md",
+      "file": "windows-defenses.md",
+      "title": "Windows - Defenses",
+      "source": "docs/redteam/evasion/windows-defenses.md",
+      "lines": 604,
+      "tokens_est": 8340,
+      "headings": [
+        "Summary",
+        "AppLocker",
+        "User Account Control",
+        "DPAPI",
+        "Powershell",
+        "Protected Process Light",
+        "Credential Guard",
+        "Event Tracing for Windows",
+        "Attack Surface Reduction",
+        "Windows Defender Antivirus",
+        "Windows Defender Application Control",
+        "Windows Defender Firewall",
+        "Windows Information Protection",
+        "BitLocker Drive Encryption",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/edr-bypass.md",
+      "file": "edr-bypass.md",
+      "title": "Endpoint Detection and Response",
+      "source": "docs/redteam/evasion/edr-bypass.md",
+      "lines": 85,
+      "tokens_est": 936,
+      "headings": [
+        "Static Detection",
+        "User Behavioural Analysis",
+        "Usermode Windows Function Monitoring",
+        "Call Stack Analysis",
+        "Process Analysis",
+        "Kernel Callbacks",
+        "WDAC to Disable EDR Components",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/elastic-edr.md",
+      "file": "elastic-edr.md",
+      "title": "Elastic EDR",
+      "source": "docs/redteam/evasion/elastic-edr.md",
+      "lines": 101,
+      "tokens_est": 972,
+      "headings": [
+        "Setup",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/linux-evasion.md",
+      "file": "linux-evasion.md",
+      "title": "Linux - Evasion",
+      "source": "docs/redteam/evasion/linux-evasion.md",
+      "lines": 139,
+      "tokens_est": 1369,
+      "headings": [
+        "Summary",
+        "File Names",
+        "Command History",
+        "Hiding Text",
+        "Timestomping",
+        "Hiding PID Listings From Non-Root Users",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/windows-dpapi.md",
+      "file": "windows-dpapi.md",
+      "title": "Windows - DPAPI",
+      "source": "docs/redteam/evasion/windows-dpapi.md",
+      "lines": 99,
+      "tokens_est": 1180,
+      "headings": [
+        "Summary",
+        "Data Protection API",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/proxy-bypass.md",
+      "file": "proxy-bypass.md",
+      "title": "Proxy Bypass",
+      "source": "docs/redteam/evasion/proxy-bypass.md",
+      "lines": 107,
+      "tokens_est": 937,
+      "headings": [
+        "Summary",
+        "Methodology",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/opsec-fails.md",
+      "file": "opsec-fails.md",
+      "title": "OPSEC",
+      "source": "docs/redteam/evasion/opsec-fails.md",
+      "lines": 66,
+      "tokens_est": 998,
+      "headings": [
+        "Infrastructure",
+        "Behavior",
+        "IOC",
+        "References"
+      ]
+    }
+  ],
+  "total_tokens_est": 57606
+}

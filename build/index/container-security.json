@@ -1,0 +1,47 @@
+{
+  "skill": "container-security",
+  "title": "Docker and Kubernetes Security",
+  "description": "Assess Docker and Kubernetes: exposed Docker socket, privileged containers, host mounts and namespace escapes, Kubernetes API and RBAC misconfiguration, kubelet and etcd exposure, and in-container credential discovery. Use when an engagement includes containers or a cluster, when you land inside a pod, or when reviewing container and Kubernetes hardening.",
+  "references": [
+    {
+      "ref": "references/docker.md",
+      "file": "docker.md",
+      "title": "Docker",
+      "source": "docs/containers/docker.md",
+      "lines": 273,
+      "tokens_est": 3454,
+      "headings": [
+        "Summary",
+        "Tools",
+        "Mounted Docker Socket",
+        "Open Docker API Port",
+        "Insecure Docker Registry",
+        "Exploit privileged container abusing the Linux cgroup v1",
+        "Breaking out of Docker via runC",
+        "Breaking out of containers using a device file",
+        "Breaking out of Docker via kernel modules loading",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/kubernetes.md",
+      "file": "kubernetes.md",
+      "title": "Kubernetes",
+      "source": "docs/containers/kubernetes.md",
+      "lines": 393,
+      "tokens_est": 4775,
+      "headings": [
+        "Summary",
+        "Tools",
+        "Container Environment",
+        "Information Gathering",
+        "RBAC Configuration",
+        "Privileged Service Account Token",
+        "Kubernetes Endpoints",
+        "Exploits",
+        "References"
+      ]
+    }
+  ],
+  "total_tokens_est": 8229
+}

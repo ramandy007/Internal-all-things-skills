@@ -1,0 +1,35 @@
+{
+  "skill": "redteam-pivoting",
+  "title": "Network Pivoting and Tunneling",
+  "description": "Pivot through internal networks: SOCKS proxies, port forwarding, SSH tunnels, Chisel, Ligolo-ng, Meterpreter routes and multi-hop pivoting. Use when a compromised host can reach otherwise unreachable subnets, when you need to tunnel tooling through a foothold, or when mapping network reachability during lateral movement.",
+  "references": [
+    {
+      "ref": "references/pivoting-techniques.md",
+      "file": "pivoting-techniques.md",
+      "title": "Network Pivoting Techniques",
+      "source": "docs/redteam/pivoting/network-pivoting-techniques.md",
+      "lines": 195,
+      "tokens_est": 1979,
+      "headings": [
+        "SOCKS Proxy",
+        "Port Forwarding",
+        "Network Capture",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/pivoting-tools.md",
+      "file": "pivoting-tools.md",
+      "title": "Network Pivoting Tools",
+      "source": "docs/redteam/pivoting/network-pivoting-tools.md",
+      "lines": 147,
+      "tokens_est": 1379,
+      "headings": [
+        "Tools Comparison",
+        "Tools",
+        "References"
+      ]
+    }
+  ],
+  "total_tokens_est": 3358
+}

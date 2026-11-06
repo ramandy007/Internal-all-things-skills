@@ -1,0 +1,37 @@
+{
+  "skill": "ibm-cloud-security",
+  "title": "IBM Cloud Security",
+  "description": "IBM Cloud reference notes for managed databases (PostgreSQL, MongoDB) and object storage (COS): supported engines, storage classes, endpoints, access patterns and service characteristics, for when IBM Cloud appears in engagement scope or in leaked configuration. Use when you hold an IBM Cloud API key, a COS service-instance ID or a *.cloud-object-storage.appdomain.cloud endpoint and need to know what the service is, how it is reached and what data it holds, or when reviewing IBM Cloud storage and database exposure. Documents the platform only - there is no IBM Cloud attack toolchain here; for S3-style bucket mechanics use aws-security.",
+  "references": [
+    {
+      "ref": "references/ibm-cloud-databases.md",
+      "file": "ibm-cloud-databases.md",
+      "title": "IBM Cloud Managed Database Services",
+      "source": "docs/cloud/ibm/ibm-cloud-databases.md",
+      "lines": 132,
+      "tokens_est": 1289,
+      "headings": [
+        "Supported Database Engines",
+        "Benefits of Using IBM Cloud Managed Database Services",
+        "Getting Started",
+        "Conclusion",
+        "Additional Resources"
+      ]
+    },
+    {
+      "ref": "references/ibm-cloud-object-storage.md",
+      "file": "ibm-cloud-object-storage.md",
+      "title": "IBM Cloud Object Storage",
+      "source": "docs/cloud/ibm/ibm-cloud-object-storage.md",
+      "lines": 121,
+      "tokens_est": 1699,
+      "headings": [
+        "Key Features",
+        "Use Cases",
+        "Code Example: Uploading and Retrieving Data",
+        "Conclusion"
+      ]
+    }
+  ],
+  "total_tokens_est": 2988
+}

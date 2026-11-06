@@ -1,0 +1,80 @@
+{
+  "skill": "active-directory-lateral-movement",
+  "title": "Active Directory Lateral Movement, Relay and Coercion",
+  "description": "Move laterally and coerce authentication in Active Directory: NTLM relay (SMB, LDAP, HTTP, AD CS), Kerberos relay, authentication coercion (PetitPotam, PrinterBug, DFSCoerce, Coerce) and DCOM execution. Use when you have credentials or a machine account and need code execution on another host, when a target lacks SMB or LDAP signing, when you need a victim to authenticate to your listener, or when chaining coercion into relay or AD CS.",
+  "references": [
+    {
+      "ref": "references/ntlm-relay.md",
+      "file": "ntlm-relay.md",
+      "title": "Internal - NTLM Relay",
+      "source": "docs/active-directory/internal-relay-ntlm.md",
+      "lines": 454,
+      "tokens_est": 5118,
+      "headings": [
+        "MS08-068 NTLM reflection",
+        "LDAP signing not required and LDAP channel binding disabled",
+        "SMB Signing Disabled and IPv4",
+        "SMB Signing Disabled and IPv6",
+        "Drop the MIC - CVE-2019-1040",
+        "Drop the MIC 2 - CVE-2019-1166",
+        "Ghost Potato - CVE-2019-1384",
+        "RemotePotato0 DCOM DCE RPC relay",
+        "DNS Poisonning - Relay delegation with mitm6",
+        "NTLM Reflection - CVE-2025-33073",
+        "Relaying with WebDav Trick",
+        "Man-in-the-middle RDP connections with pyrdp-mitm",
+        "Relay IIS AppPool to Local Administrator",
+        "Common Issues Forwarding Port 445",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/kerberos-relay.md",
+      "file": "kerberos-relay.md",
+      "title": "Internal - Kerberos Relay",
+      "source": "docs/active-directory/internal-relay-kerberos.md",
+      "lines": 116,
+      "tokens_est": 1846,
+      "headings": [
+        "Kerberos Relay over HTTP",
+        "Kerberos Relay over DNS",
+        "Kerberos Relay over SMB",
+        "Kerberos Reflection - CVE-2025-33073",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/coercion.md",
+      "file": "coercion.md",
+      "title": "Internal - Coerce",
+      "source": "docs/active-directory/internal-relay-coerce.md",
+      "lines": 153,
+      "tokens_est": 1896,
+      "headings": [
+        "Signing",
+        "WebClient Service",
+        "MS-RPRN - PrinterBug",
+        "MS-EFSR - PetitPotam",
+        "MS-DFSNM - DFS Coercion",
+        "MS-WSP - WSP Coercion",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/dcom.md",
+      "file": "dcom.md",
+      "title": "Internal - DCOM",
+      "source": "docs/active-directory/internal-dcom.md",
+      "lines": 120,
+      "tokens_est": 1531,
+      "headings": [
+        "DCOM via MMC Application Class",
+        "DCOM via Office",
+        "DCOM via ShellExecute",
+        "DCOM via ShellBrowserWindow",
+        "References"
+      ]
+    }
+  ],
+  "total_tokens_est": 10391
+}

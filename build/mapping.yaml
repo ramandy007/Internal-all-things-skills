@@ -1,0 +1,435 @@
+version: 1
+upstream:
+  repo: https://github.com/swisskyrepo/InternalAllTheThings
+  commit: 203bb0c0b290bf7c9158c32d43523b8d66f292c1
+  commit_date: "2026-08-16"
+  docs_root: docs
+  excluded:
+    - README.md
+    - DISCLAIMER.md
+
+skills:
+  # ------------------------------------------------------------------ router
+  - name: internal-engagement-playbook
+    title: Internal Engagement Playbook
+    description: >-
+      Plan and run an authorized internal-network penetration test end to end: scoping, host
+      and network discovery, Active Directory and cloud attack-surface mapping, phase-by-phase
+      checklists, evidence collection, and vulnerability report writing. Use when starting an
+      internal engagement, deciding the next phase of an attack path, planning recon coverage,
+      writing a pentest report or finding, or when source-code review or mobile-app testing is
+      part of the engagement. Routes to the specialized skills in this library (Active Directory,
+      cloud, red team, C2, containers, MSSQL, CI/CD).
+    sources:
+      - {src: methodology/bug-hunting-methodology.md, ref: bug-hunting-methodology.md}
+      - {src: methodology/vulnerability-reports.md, ref: vulnerability-reports.md}
+      - {src: methodology/source-code-analysis.md, ref: source-code-analysis.md}
+      - {src: methodology/android-applications.md, ref: android-applications.md}
+
+  # ------------------------------------------------------- active directory
+  - name: active-directory-enumeration
+    title: Active Directory Enumeration and Recon
+    description: >-
+      Enumerate an Active Directory domain with PowerView, BloodHound, NetExec, impacket and
+      native Windows tools: users, groups, computers, trusts, GPOs, ACLs/ACEs, AD-integrated
+      DNS, shares, RODC, machine account quota and the AD recycle bin. Use when starting an AD
+      engagement, when mapping domain objects and permissions, when you hold any valid domain
+      credentials or a null session and need to find attack paths, or when reviewing AD security
+      posture. Includes AD operations from Linux (ldapsearch, impacket, netexec, bloodyAD).
+    sources:
+      - {src: active-directory/ad-adds-enumerate.md, ref: domain-enumeration.md}
+      - {src: active-directory/ad-adds-groups.md, ref: groups.md}
+      - {src: active-directory/ad-adds-acl-ace.md, ref: acl-ace.md}
+      - {src: active-directory/ad-adds-group-policy-objects.md, ref: group-policy-objects.md}
+      - {src: active-directory/ad-adds-linux.md, ref: ad-from-linux.md}
+      - {src: active-directory/ad-adds-machineaccountquota.md, ref: machine-account-quota.md}
+      - {src: active-directory/ad-adds-recycle-bin.md, ref: recycle-bin.md}
+      - {src: active-directory/ad-adds-rodc.md, ref: rodc.md}
+      - {src: active-directory/ad-integrated-dns.md, ref: adidns.md}
+      - {src: active-directory/internal-shares.md, ref: shares.md}
+      - {src: active-directory/ad-tricks.md, ref: tricks.md}
+
+  - name: active-directory-kerberos
+    title: Active Directory Kerberos Attacks
+    description: >-
+      Attack Kerberos in Active Directory: Kerberoasting, AS-REP roasting, Timeroasting, ticket
+      forging (golden, silver, bronze bit), S4U2Self/S4U2Proxy, and unconstrained, constrained
+      and resource-based constrained delegation abuse. Use when you have domain credentials and
+      want service-account or privileged-account hashes, when a host or account is trusted for
+      delegation, when you need to forge, convert or renew tickets, or when explaining Kerberos
+      delegation paths. Covers Rubeus, impacket, NetExec, PowerView and ticket manipulation.
+    sources:
+      - {src: active-directory/ad-roasting-kerberoasting.md, ref: kerberoasting.md}
+      - {src: active-directory/ad-roasting-asrep.md, ref: asrep-roasting.md}
+      - {src: active-directory/ad-roasting-timeroasting.md, ref: timeroasting.md}
+      - {src: active-directory/kerberos-tickets.md, ref: tickets.md}
+      - {src: active-directory/kerberos-bronze-bit.md, ref: bronze-bit.md}
+      - {src: active-directory/kerberos-s4u.md, ref: s4u.md}
+      - {src: active-directory/kerberos-delegation-constrained.md, ref: delegation-constrained.md}
+      - {src: active-directory/kerberos-delegation-unconstrained.md, ref: delegation-unconstrained.md}
+      - {src: active-directory/kerberos-delegation-rbcd.md, ref: delegation-rbcd.md}
+
+  - name: active-directory-certificates
+    title: AD CS Certificate Attacks (ESC1-ESC15)
+    description: >-
+      Exploit Active Directory Certificate Services (AD CS): ESC1 through ESC15 misconfigurations,
+      certificate template and CA abuse, enrollment agent paths, Golden Certificates and
+      certificate-based persistence. Use when a domain has an enterprise CA, when BloodHound or
+      Certipy output shows certificate templates or enrollment rights, when you need a certificate
+      that authenticates as another user or machine, or when reviewing PKI hardening. Covers
+      Certipy, Certify, bloodyAD, ForgeCert, Rubeus and PKINIT abuse.
+    sources:
+      - {src: active-directory/ad-adcs-certificate-services.md, ref: adcs-overview.md}
+      - {src: active-directory/ad-adcs-esc.md, ref: esc-overview.md}
+      - {src: active-directory/ad-adcs-esc01.md, ref: esc01.md}
+      - {src: active-directory/ad-adcs-esc02.md, ref: esc02.md}
+      - {src: active-directory/ad-adcs-esc03.md, ref: esc03.md}
+      - {src: active-directory/ad-adcs-esc04.md, ref: esc04.md}
+      - {src: active-directory/ad-adcs-esc05.md, ref: esc05.md}
+      - {src: active-directory/ad-adcs-esc06.md, ref: esc06.md}
+      - {src: active-directory/ad-adcs-esc07.md, ref: esc07.md}
+      - {src: active-directory/ad-adcs-esc08.md, ref: esc08.md}
+      - {src: active-directory/ad-adcs-esc09.md, ref: esc09.md}
+      - {src: active-directory/ad-adcs-esc10.md, ref: esc10.md}
+      - {src: active-directory/ad-adcs-esc11.md, ref: esc11.md}
+      - {src: active-directory/ad-adcs-esc12.md, ref: esc12.md}
+      - {src: active-directory/ad-adcs-esc13.md, ref: esc13.md}
+      - {src: active-directory/ad-adcs-esc14.md, ref: esc14.md}
+      - {src: active-directory/ad-adcs-esc15.md, ref: esc15.md}
+      - {src: active-directory/ad-adcs-golden-certificate.md, ref: golden-certificate.md}
+
+  - name: active-directory-credentials
+    title: Active Directory Credential Theft and Reuse
+    description: >-
+      Steal and abuse Active Directory credentials: LSASS, SAM and NTDS.dit dumping, hash capture
+      and cracking, pass-the-hash, pass-the-key, overpass-the-hash, password spraying, GPP
+      cpassword, LAPS, gMSA and dMSA, DSRM, passwords in user comments, pre-created computer
+      accounts and Shadow Credentials (msDS-KeyCredentialLink). Use when you need credentials or
+      hashes from a host or the domain, when planning a password spray, when you find a readable
+      attribute or policy containing secrets, or when converting recovered material into a
+      usable session.
+    sources:
+      - {src: active-directory/hash-capture.md, ref: hash-capture-and-cracking.md}
+      - {src: active-directory/hash-pass-the-hash.md, ref: pass-the-hash.md}
+      - {src: active-directory/hash-pass-the-key.md, ref: pass-the-key.md}
+      - {src: active-directory/hash-over-pass-the-hash.md, ref: overpass-the-hash.md}
+      - {src: active-directory/ad-adds-ntds-dumping.md, ref: ntds-dumping.md}
+      - {src: active-directory/pwd-spraying.md, ref: password-spraying.md}
+      - {src: active-directory/pwd-group-policy-preferences.md, ref: gpp-passwords.md}
+      - {src: active-directory/pwd-read-laps.md, ref: laps.md}
+      - {src: active-directory/pwd-read-gmsa.md, ref: gmsa.md}
+      - {src: active-directory/pwd-read-dmsa.md, ref: dmsa.md}
+      - {src: active-directory/pwd-shadow-credentials.md, ref: shadow-credentials.md}
+      - {src: active-directory/pwd-comments.md, ref: user-comments.md}
+      - {src: active-directory/pwd-dsrm-credentials.md, ref: dsrm.md}
+      - {src: active-directory/pwd-precreated-computer.md, ref: precreated-computer.md}
+
+  - name: active-directory-domain-escalation
+    title: Active Directory Domain and Forest Escalation
+    description: >-
+      Escalate from a foothold to domain or forest compromise: ZeroLogon, PrintNightmare,
+      NoPAC/sAMAccountName spoofing, MS14-068, PrivExchange, ResetNightmare, SID-history
+      injection, trust-key and inter-realm ticket abuse, PAM trusts and ADFS Golden SAML. Use
+      when you have low-privileged domain access and need a path to Domain Admin or forest
+      takeover, when a trust relationship or ADFS federation exists, or when assessing unpatched
+      legacy domain-controller CVEs.
+    sources:
+      - {src: active-directory/CVE/ZeroLogon.md, ref: zerologon.md}
+      - {src: active-directory/CVE/PrintNightmare.md, ref: printnightmare.md}
+      - {src: active-directory/CVE/NoPAC.md, ref: nopac.md}
+      - {src: active-directory/CVE/MS14-068.md, ref: ms14-068.md}
+      - {src: active-directory/CVE/PrivExchange.md, ref: privexchange.md}
+      - {src: active-directory/CVE/ResetNightmare.md, ref: resetnightmare.md}
+      - {src: active-directory/trust-relationship.md, ref: trust-relationship.md}
+      - {src: active-directory/trust-sid-hijacking.md, ref: sid-history.md}
+      - {src: active-directory/trust-ticket.md, ref: trust-ticket.md}
+      - {src: active-directory/trust-pam.md, ref: pam-trust.md}
+      - {src: active-directory/ad-adfs-federation-services.md, ref: adfs-golden-saml.md}
+
+  - name: active-directory-lateral-movement
+    title: Active Directory Lateral Movement, Relay and Coercion
+    description: >-
+      Move laterally and coerce authentication in Active Directory: NTLM relay (SMB, LDAP, HTTP,
+      AD CS), Kerberos relay, authentication coercion (PetitPotam, PrinterBug, DFSCoerce, Coerce)
+      and DCOM execution. Use when you have credentials or a machine account and need code
+      execution on another host, when a target lacks SMB or LDAP signing, when you need a victim
+      to authenticate to your listener, or when chaining coercion into relay or AD CS.
+    sources:
+      - {src: active-directory/internal-relay-ntlm.md, ref: ntlm-relay.md}
+      - {src: active-directory/internal-relay-kerberos.md, ref: kerberos-relay.md}
+      - {src: active-directory/internal-relay-coerce.md, ref: coercion.md}
+      - {src: active-directory/internal-dcom.md, ref: dcom.md}
+
+  - name: active-directory-enterprise-systems
+    title: Enterprise Management Systems (SCCM, SCOM, WSUS, MDT)
+    description: >-
+      Compromise enterprise management and deployment infrastructure in Windows environments:
+      SCCM/MECM (site takeover, network access accounts, PXE, client push), SCOM, WSUS and MDT,
+      plus PXE boot image extraction. Use when you find SCCM, SCOM, WSUS or MDT in an internal
+      network, when reviewing deployment credentials or task sequences, or when pivoting from a
+      workstation to the systems that distribute privileged software and scripts.
+    sources:
+      - {src: active-directory/deployment-sccm.md, ref: sccm.md}
+      - {src: active-directory/deployment-scom.md, ref: scom.md}
+      - {src: active-directory/deployment-wsus.md, ref: wsus.md}
+      - {src: active-directory/deployment-mdt.md, ref: mdt.md}
+      - {src: active-directory/internal-pxe-boot-image.md, ref: pxe-boot-image.md}
+
+  # ---------------------------------------------------------------- cloud
+  - name: aws-security
+    title: AWS Security Assessment
+    description: >-
+      Assess and attack AWS: access-token and key abuse, IAM privilege escalation, IMDSv1/v2
+      metadata SSRF, S3 bucket exposure, EC2, Lambda, SSM, DynamoDB, Cognito, enumeration and IOC
+      detection. Use when an engagement includes AWS, when you find AWS keys or an SSRF into
+      instance metadata, when reviewing IAM policies for escalation paths, or when triaging AWS
+      incident indicators.
+    sources:
+      - {src: cloud/aws/aws-enumeration.md, ref: aws-enumeration.md}
+      - {src: cloud/aws/aws-access-token.md, ref: aws-access-token.md}
+      - {src: cloud/aws/aws-iam.md, ref: aws-iam.md}
+      - {src: cloud/aws/aws-metadata.md, ref: aws-metadata-ssrf.md}
+      - {src: cloud/aws/aws-s3-bucket.md, ref: aws-s3-bucket.md}
+      - {src: cloud/aws/aws-ec2.md, ref: aws-ec2.md}
+      - {src: cloud/aws/aws-lambda.md, ref: aws-lambda-apigw.md}
+      - {src: cloud/aws/aws-ssm.md, ref: aws-ssm.md}
+      - {src: cloud/aws/aws-dynamodb.md, ref: aws-dynamodb.md}
+      - {src: cloud/aws/aws-cognito.md, ref: aws-cognito.md}
+      - {src: cloud/aws/aws-cli.md, ref: aws-cli.md}
+      - {src: cloud/aws/aws-ioc-detection.md, ref: aws-ioc-detection.md}
+      - {src: cloud/aws/aws-training.md, ref: aws-training.md}
+
+  - name: azure-entra-security
+    title: Azure and Entra ID Security
+    description: >-
+      Assess and attack Microsoft Azure and Entra ID (Azure AD): token and refresh-token abuse,
+      enumeration with AzureHound/ROADtools, IAM objects (users, devices, service principals,
+      managed identities), Conditional Access bypass, AD Connect and cloud sync, Key Vault,
+      Runbooks, Intune, Storage Blob, Web Apps, Container Registry, Azure DevOps, Office 365
+      phishing and persistence, and aka.ms shortcuts. Use when an engagement includes Azure or
+      Entra ID, when you hold a token or credentials, or when reviewing cloud tenant configuration.
+    sources:
+      - {src: cloud/azure/azure-enumeration.md, ref: azure-enumeration.md}
+      - {src: cloud/azure/azure-requirements.md, ref: azure-requirements.md}
+      - {src: cloud/azure/azure-access-and-token.md, ref: azure-access-and-token.md}
+      - {src: cloud/azure/azure-devices-users-sp.md, ref: azure-iam.md}
+      - {src: cloud/azure/azure-ad-conditional-access-policy.md, ref: conditional-access-policy.md}
+      - {src: cloud/azure/azure-ad-connect.md, ref: ad-connect-cloud-sync.md}
+      - {src: cloud/azure/azure-persistence.md, ref: azure-persistence.md}
+      - {src: cloud/azure/azure-phishing.md, ref: azure-phishing.md}
+      - {src: cloud/azure/azure-services-keyvault.md, ref: keyvault.md}
+      - {src: cloud/azure/azure-services-runbook.md, ref: runbook-automation.md}
+      - {src: cloud/azure/azure-services-microsoft-intune.md, ref: intune.md}
+      - {src: cloud/azure/azure-services-storage-blob.md, ref: storage-blob.md}
+      - {src: cloud/azure/azure-services-virtual-machine.md, ref: virtual-machine.md}
+      - {src: cloud/azure/azure-services-web-apps.md, ref: web-apps.md}
+      - {src: cloud/azure/azure-services-container-registry.md, ref: container-registry.md}
+      - {src: cloud/azure/azure-services-devops.md, ref: azure-devops.md}
+      - {src: cloud/azure/azure-services-application-proxy.md, ref: application-proxy.md}
+      - {src: cloud/azure/azure-services-application-endpoint.md, ref: application-endpoint.md}
+      - {src: cloud/azure/azure-services-deployment-template.md, ref: deployment-template.md}
+      - {src: cloud/azure/azure-services-web-domains.md, ref: dns-suffix-domains.md}
+      - {src: cloud/azure/azure-services-office-365.md, ref: office-365.md}
+      - {src: cloud/azure/aka-ms.md, ref: aka-ms-shortcuts.md}
+
+  - name: ibm-cloud-security
+    title: IBM Cloud Security
+    description: >-
+      IBM Cloud reference notes for managed databases (PostgreSQL, MongoDB) and object storage
+      (COS): supported engines, storage classes, endpoints, access patterns and service
+      characteristics, for when IBM Cloud appears in engagement scope or in leaked configuration.
+      Use when you hold an IBM Cloud API key, a COS service-instance ID or a
+      *.cloud-object-storage.appdomain.cloud endpoint and need to know what the service is, how it
+      is reached and what data it holds, or when reviewing IBM Cloud storage and database
+      exposure. Documents the platform only - there is no IBM Cloud attack toolchain here; for
+      S3-style bucket mechanics use aws-security.
+    sources:
+      - {src: cloud/ibm/ibm-cloud-databases.md, ref: ibm-cloud-databases.md}
+      - {src: cloud/ibm/ibm-cloud-object-storage.md, ref: ibm-cloud-object-storage.md}
+
+  # -------------------------------------------------------------- red team
+  - name: redteam-initial-access
+    title: Red Team Initial Access
+    description: >-
+      Gain initial access during red team operations: phishing, ClickFix, HTML smuggling,
+      malicious Office documents (Excel, Word, VSTO), Windows download-and-execute one-liners,
+      using credentials on Windows hosts, and web attack-surface mapping. Use when planning an
+      initial foothold, when crafting a payload or phishing lure, when you hold credentials for a
+      Windows host, or when choosing an execution technique that survives mail and proxy filters.
+    sources:
+      - {src: redteam/access/initial-access.md, ref: initial-access.md}
+      - {src: redteam/access/phishing.md, ref: phishing.md}
+      - {src: redteam/access/clickfix.md, ref: clickfix.md}
+      - {src: redteam/access/html-smuggling.md, ref: html-smuggling.md}
+      - src: redteam/access/office-attacks.md
+        ref: office-attacks.md
+        split:
+          - {ref: office-excel.md, from: 1, to: 224, title: "Office Attacks - Overview and Excel"}
+          - {ref: office-word.md, from: 225, to: 702, title: "Office Attacks - Word"}
+          - {ref: office-macro-development.md, from: 703, to: 791, title: "Office Attacks - VSTO and Macro Development"}
+      - {src: redteam/access/windows-download-execute.md, ref: windows-download-execute.md}
+      - {src: redteam/access/windows-using-credentials.md, ref: windows-using-credentials.md}
+      - {src: redteam/access/web-attack-surface.md, ref: web-attack-surface.md}
+
+  - name: redteam-privilege-escalation
+    title: Host Privilege Escalation (Windows and Linux)
+    description: >-
+      Escalate privileges on compromised Windows and Linux hosts: enumeration checklists, service
+      and scheduled-task abuse, unquoted service paths, kernel and driver exploits, impersonation
+      privileges, SUID/capabilities/sudo/GTFOBins, NFS root squashing and local credential
+      looting. Use after obtaining a low-privileged shell, when you need local admin or
+      SYSTEM/root, or when triaging a host for escalation paths.
+    sources:
+      - src: redteam/escalation/windows-privilege-escalation.md
+        ref: windows-privesc.md
+        split:
+          - {ref: windows-privesc-enumeration.md, from: 1, to: 299, title: "Windows Privilege Escalation - Enumeration"}
+          - {ref: windows-privesc-credential-looting.md, from: 300, to: 577, title: "Windows Privilege Escalation - Credential Looting"}
+          - {ref: windows-privesc-local-eop.md, from: 578, to: 1128, title: "Windows Privilege Escalation - Local EoP Techniques"}
+          - {ref: windows-privesc-privileges.md, from: 1129, to: 1404, title: "Windows Privilege Escalation - Impersonation and Privileged Files"}
+          - {ref: windows-privesc-cves.md, from: 1405, to: 1576, title: "Windows Privilege Escalation - CVEs"}
+      - {src: redteam/escalation/linux-privilege-escalation.md, ref: linux-privesc.md}
+
+  - name: redteam-defense-evasion
+    title: Defense Evasion (AMSI, Defender, EDR)
+    description: >-
+      Evade Windows and Linux defenses: AMSI bypass, PowerShell and ETW logging evasion, Windows
+      Defender and AppLocker/WDAC bypass, EDR unhooking and direct syscalls, DPAPI secret
+      extraction, proxy traversal and OPSEC failure avoidance. Use when a payload is blocked, when
+      you must reduce telemetry, when dumping DPAPI secrets, or when reviewing OPSEC before an
+      operation.
+    sources:
+      - src: redteam/evasion/windows-amsi-bypass.md
+        ref: amsi-bypass.md
+        split:
+          - {ref: amsi-bypass-techniques.md, from: 1, to: 298, title: "AMSI Bypass - Detection and Patching Techniques"}
+          - {ref: amsi-bypass-payload-1.md, from: 299, to: 495, title: "AMSI Bypass - Nishang Script (Variant 1)"}
+          - {ref: amsi-bypass-payload-2.md, from: 496, to: 690, title: "AMSI Bypass - Nishang Script (Variant 2)"}
+          - {ref: amsi-bypass-variants.md, from: 691, to: 781, title: "AMSI Bypass - Additional Variants and References"}
+      - {src: redteam/evasion/windows-defenses.md, ref: windows-defenses.md}
+      - {src: redteam/evasion/edr-bypass.md, ref: edr-bypass.md}
+      - {src: redteam/evasion/elastic-edr.md, ref: elastic-edr.md}
+      - {src: redteam/evasion/linux-evasion.md, ref: linux-evasion.md}
+      - {src: redteam/evasion/windows-dpapi.md, ref: windows-dpapi.md}
+      - {src: redteam/evasion/proxy-bypass.md, ref: proxy-bypass.md}
+      - {src: redteam/evasion/opsec-fails.md, ref: opsec-fails.md}
+
+  - name: redteam-persistence
+    title: Persistence (Windows, Linux, RDP)
+    description: >-
+      Establish persistence on Windows, Linux and RDP sessions: registry, scheduled tasks,
+      services, WMI, startup folders, DLL search order, domain-level persistence (GPO, SID
+      history, AdminSDHolder, DCShadow), and Linux cron/systemd/SSH backdoors. Use after achieving
+      access, when you must survive reboots and credential rotation, or when reviewing
+      persistence coverage for detection.
+    sources:
+      - src: redteam/persistence/windows-persistence.md
+        ref: windows-persistence.md
+        split:
+          - {ref: windows-persistence-user.md, from: 1, to: 329, title: "Windows Persistence - Hide, Disable Defenses, Simple User"}
+          - {ref: windows-persistence-elevated.md, from: 330, to: 632, title: "Windows Persistence - Service Land and Elevated"}
+          - {ref: windows-persistence-domain.md, from: 633, to: 711, title: "Windows Persistence - Domain"}
+      - {src: redteam/persistence/linux-persistence.md, ref: linux-persistence.md}
+      - {src: redteam/persistence/rdp-persistence.md, ref: rdp-persistence.md}
+
+  - name: redteam-pivoting
+    title: Network Pivoting and Tunneling
+    description: >-
+      Pivot through internal networks: SOCKS proxies, port forwarding, SSH tunnels, Chisel,
+      Ligolo-ng, Meterpreter routes and multi-hop pivoting. Use when a compromised host can reach
+      otherwise unreachable subnets, when you need to tunnel tooling through a foothold, or when
+      mapping network reachability during lateral movement.
+    sources:
+      - {src: redteam/pivoting/network-pivoting-techniques.md, ref: pivoting-techniques.md}
+      - {src: redteam/pivoting/network-pivoting-tools.md, ref: pivoting-tools.md}
+
+  # ----------------------------------------------------- infrastructure
+  - name: c2-frameworks
+    title: Command and Control Frameworks
+    description: >-
+      Operate command-and-control frameworks: Cobalt Strike (listeners, profiles, beacons, kits
+      and artifacts), Metasploit Framework and Mythic C2. Use when setting up a C2 server or
+      listener, when configuring a beacon or payload profile, when troubleshooting a callback, or
+      when customizing a C2 kit.
+    sources:
+      - {src: command-control/cobalt-strike.md, ref: cobalt-strike.md}
+      - {src: command-control/cobalt-strike-beacons.md, ref: cobalt-strike-beacons.md}
+      - {src: command-control/cobalt-strike-kits.md, ref: cobalt-strike-kits.md}
+      - {src: command-control/metasploit.md, ref: metasploit.md}
+      - {src: command-control/mythic.md, ref: mythic.md}
+
+  - name: container-security
+    title: Docker and Kubernetes Security
+    description: >-
+      Assess Docker and Kubernetes: exposed Docker socket, privileged containers, host mounts and
+      namespace escapes, Kubernetes API and RBAC misconfiguration, kubelet and etcd exposure, and
+      in-container credential discovery. Use when an engagement includes containers or a cluster,
+      when you land inside a pod, or when reviewing container and Kubernetes hardening.
+    sources:
+      - {src: containers/docker.md, ref: docker.md}
+      - {src: containers/kubernetes.md, ref: kubernetes.md}
+
+  - name: mssql-security
+    title: Microsoft SQL Server Attacks
+    description: >-
+      Attack and audit Microsoft SQL Server: enumeration, audit checks, credential harvesting
+      (linked servers, logins, SQL agent jobs), linked-database crawling, and OS command execution
+      via xp_cmdshell, OLE automation and CLR assemblies. Use when MSSQL is reachable with
+      credentials or integrated authentication, when you need a command-execution path from a
+      database, or when reviewing MSSQL configuration.
+    sources:
+      - {src: databases/mssql-enumeration.md, ref: mssql-enumeration.md}
+      - {src: databases/mssql-audit-checks.md, ref: mssql-audit-checks.md}
+      - {src: databases/mssql-credentials.md, ref: mssql-credentials.md}
+      - {src: databases/mssql-linked-database.md, ref: mssql-linked-database.md}
+      - {src: databases/mssql-command-execution.md, ref: mssql-command-execution.md}
+
+  - name: cicd-supply-chain-security
+    title: CI/CD and Supply Chain Security
+    description: >-
+      Assess CI/CD pipelines and the software supply chain: GitHub Actions, GitLab CI, Azure
+      DevOps, CircleCI, Buildkite, Drone CI runner abuse, hardcoded secret enumeration, and
+      package-manager/build-file credential attacks (npm, NuGet, PyPI). Use when an engagement
+      includes source control or CI/CD, when you find pipeline configuration or tokens, or when
+      reviewing build-system security.
+    sources:
+      - {src: devops/README.md, ref: cicd-overview.md}
+      - {src: devops/cicd-github-actions.md, ref: github-actions.md}
+      - {src: devops/cicd-gitlab-ci.md, ref: gitlab-ci.md}
+      - {src: devops/cicd-azure-devops.md, ref: azure-devops.md}
+      - {src: devops/cicd-circle-ci.md, ref: circleci.md}
+      - {src: devops/cicd-buildkite.md, ref: buildkite.md}
+      - {src: devops/cicd-drone-ci.md, ref: drone-ci.md}
+      - {src: devops/secrets-enumeration.md, ref: secrets-enumeration.md}
+      - {src: devops/package-managers.md, ref: package-managers.md}
+
+  # --------------------------------------------------------- references
+  - name: security-cheatsheets
+    title: Security Command Cheatsheets
+    description: >-
+      Quick command references for internal and red team work: Mimikatz modules, PowerShell
+      one-liners and download cradles, network host discovery, hash cracking with Hashcat and
+      John, kiosk escape and jail breakout, Liferay, AS/400 and miscellaneous Windows/Linux
+      tricks. Use when you need exact syntax fast for a tool, a discovery command, a hashcat
+      mode, or an escape technique.
+    sources:
+      - {src: cheatsheets/mimikatz-cheatsheet.md, ref: mimikatz.md}
+      - {src: cheatsheets/powershell-cheatsheet.md, ref: powershell.md}
+      - {src: cheatsheets/network-discovery.md, ref: network-discovery.md}
+      - {src: cheatsheets/hash-cracking.md, ref: hash-cracking.md}
+      - {src: cheatsheets/escape-breakout.md, ref: kiosk-escape-breakout.md}
+      - {src: cheatsheets/liferay.md, ref: liferay.md}
+      - {src: cheatsheets/as-400.md, ref: as-400.md}
+      - {src: cheatsheets/miscellaneous-tricks.md, ref: miscellaneous-tricks.md}
+
+  - name: shell-cheatsheets
+    title: Reverse and Bind Shell Cheatsheets
+    description: >-
+      Ready-to-use reverse shell and bind shell payloads across Bash, Python, Perl, PHP, Ruby,
+      Netcat, PowerShell, Java, Node, Go and more, plus TTY upgrade and fully interactive Windows
+      shell techniques. Use when you need a shell payload for a specific language or listener,
+      when a payload must match a restricted environment, or when upgrading a dumb shell to a
+      fully interactive one.
+    sources:
+      - {src: cheatsheets/shell-reverse-cheatsheet.md, ref: reverse-shell.md}
+      - {src: cheatsheets/shell-bind-cheatsheet.md, ref: bind-shell.md}

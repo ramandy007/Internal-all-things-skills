@@ -1,0 +1,99 @@
+{
+  "skill": "c2-frameworks",
+  "title": "Command and Control Frameworks",
+  "description": "Operate command-and-control frameworks: Cobalt Strike (listeners, profiles, beacons, kits and artifacts), Metasploit Framework and Mythic C2. Use when setting up a C2 server or listener, when configuring a beacon or payload profile, when troubleshooting a callback, or when customizing a C2 kit.",
+  "references": [
+    {
+      "ref": "references/cobalt-strike.md",
+      "file": "cobalt-strike.md",
+      "title": "Cobalt Strike",
+      "source": "docs/command-control/cobalt-strike.md",
+      "lines": 308,
+      "tokens_est": 3319,
+      "headings": [
+        "Summary",
+        "Infrastructure",
+        "OpSec",
+        "Malleable C2",
+        "Files",
+        "Powershell and .NET",
+        "Lateral Movement",
+        "VPN & Pivots",
+        "Beacon Object Files",
+        "NTLM Relaying via Cobalt Strike",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/cobalt-strike-beacons.md",
+      "file": "cobalt-strike-beacons.md",
+      "title": "Cobalt Strike - Beacons",
+      "source": "docs/command-control/cobalt-strike-beacons.md",
+      "lines": 114,
+      "tokens_est": 1131,
+      "headings": [
+        "DNS Beacon",
+        "SMB Beacon",
+        "SSH Beacon",
+        "Metasploit compatibility",
+        "Custom Payloads",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/cobalt-strike-kits.md",
+      "file": "cobalt-strike-kits.md",
+      "title": "Cobalt Strike - Kits",
+      "source": "docs/command-control/cobalt-strike-kits.md",
+      "lines": 100,
+      "tokens_est": 1305,
+      "headings": [
+        "Elevate Kit",
+        "Persistence Kit",
+        "Resource Kit",
+        "Artifact Kit",
+        "Mimikatz Kit",
+        "Sleep Mask Kit",
+        "Mutator Kit",
+        "Thread Stack Spoofer",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/metasploit.md",
+      "file": "metasploit.md",
+      "title": "Metasploit",
+      "source": "docs/command-control/metasploit.md",
+      "lines": 235,
+      "tokens_est": 1853,
+      "headings": [
+        "Summary",
+        "Installation",
+        "Sessions",
+        "Background handler",
+        "Meterpreter - Basic",
+        "Scripting Metasploit",
+        "Multiple transports",
+        "Best of - Exploits",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/mythic.md",
+      "file": "mythic.md",
+      "title": "Mythic C2",
+      "source": "docs/command-control/mythic.md",
+      "lines": 76,
+      "tokens_est": 769,
+      "headings": [
+        "Summary",
+        "Installation",
+        "Agents",
+        "Profiles",
+        "SSL",
+        "References"
+      ]
+    }
+  ],
+  "total_tokens_est": 8377
+}

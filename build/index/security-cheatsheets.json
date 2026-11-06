@@ -1,0 +1,170 @@
+{
+  "skill": "security-cheatsheets",
+  "title": "Security Command Cheatsheets",
+  "description": "Quick command references for internal and red team work: Mimikatz modules, PowerShell one-liners and download cradles, network host discovery, hash cracking with Hashcat and John, kiosk escape and jail breakout, Liferay, AS/400 and miscellaneous Windows/Linux tricks. Use when you need exact syntax fast for a tool, a discovery command, a hashcat mode, or an escape technique.",
+  "references": [
+    {
+      "ref": "references/mimikatz.md",
+      "file": "mimikatz.md",
+      "title": "Mimikatz",
+      "source": "docs/cheatsheets/mimikatz-cheatsheet.md",
+      "lines": 323,
+      "tokens_est": 4512,
+      "headings": [
+        "Summary",
+        "Execute commands",
+        "Extract passwords",
+        "LSA Protection Workaround",
+        "Mini Dump",
+        "Pass The Hash",
+        "Golden ticket",
+        "Skeleton key",
+        "RDP Session Takeover",
+        "RDP Passwords",
+        "Credential Manager & DPAPI",
+        "Commands list",
+        "Powershell version",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/powershell.md",
+      "file": "powershell.md",
+      "title": "Powershell",
+      "source": "docs/cheatsheets/powershell-cheatsheet.md",
+      "lines": 366,
+      "tokens_est": 4146,
+      "headings": [
+        "Summary",
+        "Execution Policy",
+        "Constrained Mode",
+        "Encoded Commands",
+        "Download file",
+        "Load Powershell scripts",
+        "Load C# assembly reflectively",
+        "Call Win API using delegate functions with Reflection",
+        "Secure String to Plaintext",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/network-discovery.md",
+      "file": "network-discovery.md",
+      "title": "Network Discovery",
+      "source": "docs/cheatsheets/network-discovery.md",
+      "lines": 374,
+      "tokens_est": 3223,
+      "headings": [
+        "MAC Address",
+        "DHCP",
+        "DNS",
+        "NBT-NS",
+        "MDNS",
+        "ARP",
+        "Ping",
+        "LDAP",
+        "Port Scans and Enumeration",
+        "Netdiscover",
+        "Responder",
+        "MITM",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/hash-cracking.md",
+      "file": "hash-cracking.md",
+      "title": "Hash Cracking",
+      "source": "docs/cheatsheets/hash-cracking.md",
+      "lines": 164,
+      "tokens_est": 2017,
+      "headings": [
+        "Summary",
+        "Hashcat",
+        "John",
+        "Rainbow tables",
+        "Tips and Tricks",
+        "Online Cracking Resources",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/kiosk-escape-breakout.md",
+      "file": "kiosk-escape-breakout.md",
+      "title": "Kiosk Escape and Jail Breakout",
+      "source": "docs/cheatsheets/escape-breakout.md",
+      "lines": 181,
+      "tokens_est": 1888,
+      "headings": [
+        "Summary",
+        "Tools",
+        "Methodology",
+        "Gaining a command shell",
+        "Sticky Keys",
+        "Dialog Boxes",
+        "Open a new Windows Explorer instance",
+        "Exploring Context Menus",
+        "Internet Explorer",
+        "Shell URI Handlers",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/liferay.md",
+      "file": "liferay.md",
+      "title": "Liferay",
+      "source": "docs/cheatsheets/liferay.md",
+      "lines": 155,
+      "tokens_est": 1890,
+      "headings": [
+        "Summary",
+        "Portlets",
+        "Login Page",
+        "Register Page",
+        "User Profile",
+        "User Configuration",
+        "Control Panel",
+        "API",
+        "Vulnerabilities",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/as-400.md",
+      "file": "as-400.md",
+      "title": "AS400",
+      "source": "docs/cheatsheets/as-400.md",
+      "lines": 659,
+      "tokens_est": 9487,
+      "headings": [
+        "Summary",
+        "Lab",
+        "Enumeration",
+        "Access and Audit",
+        "Default Credentials",
+        "User Enumeration",
+        "Useful Commands",
+        "NMAP Scripts",
+        "User Class",
+        "Authority",
+        "Special Authority",
+        "Adopted Authority",
+        "Password Cracking",
+        "Privilege Escalation",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/miscellaneous-tricks.md",
+      "file": "miscellaneous-tricks.md",
+      "title": "Miscellaneous & Tricks",
+      "source": "docs/cheatsheets/miscellaneous-tricks.md",
+      "lines": 46,
+      "tokens_est": 257,
+      "headings": [
+        "Send Messages to Other Users",
+        "NetExec Credential Database"
+      ]
+    }
+  ],
+  "total_tokens_est": 27420
+}

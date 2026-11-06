@@ -1,0 +1,115 @@
+{
+  "skill": "redteam-privilege-escalation",
+  "title": "Host Privilege Escalation (Windows and Linux)",
+  "description": "Escalate privileges on compromised Windows and Linux hosts: enumeration checklists, service and scheduled-task abuse, unquoted service paths, kernel and driver exploits, impersonation privileges, SUID/capabilities/sudo/GTFOBins, NFS root squashing and local credential looting. Use after obtaining a low-privileged shell, when you need local admin or SYSTEM/root, or when triaging a host for escalation paths.",
+  "references": [
+    {
+      "ref": "references/windows-privesc-enumeration.md",
+      "file": "windows-privesc-enumeration.md",
+      "title": "Windows - Privilege Escalation",
+      "source": "docs/redteam/escalation/windows-privilege-escalation.md",
+      "lines": 300,
+      "tokens_est": 3123,
+      "headings": [
+        "Summary",
+        "Tools",
+        "Windows Version and Configuration",
+        "User Enumeration",
+        "Network Enumeration",
+        "Antivirus Enumeration",
+        "Default Writable Folders"
+      ]
+    },
+    {
+      "ref": "references/windows-privesc-credential-looting.md",
+      "file": "windows-privesc-credential-looting.md",
+      "title": "Windows Privilege Escalation - Credential Looting",
+      "source": "docs/redteam/escalation/windows-privilege-escalation.md",
+      "lines": 281,
+      "tokens_est": 2541,
+      "headings": [
+        "EoP - Looting for passwords"
+      ]
+    },
+    {
+      "ref": "references/windows-privesc-local-eop.md",
+      "file": "windows-privesc-local-eop.md",
+      "title": "Windows Privilege Escalation - Local EoP Techniques",
+      "source": "docs/redteam/escalation/windows-privilege-escalation.md",
+      "lines": 554,
+      "tokens_est": 6426,
+      "headings": [
+        "EoP - Processes Enumeration and Tasks",
+        "EoP - Incorrect permissions in services",
+        "EoP - Windows Subsystem for Linux (WSL)",
+        "EoP - Unquoted Service Paths",
+        "EoP - $PATH Interception",
+        "EoP - Named Pipes",
+        "EoP - Kernel Exploitation",
+        "EoP - Microsoft Windows Installer",
+        "EoP - Insecure GUI apps",
+        "EoP - Evaluating Vulnerable Drivers",
+        "EoP - Printers",
+        "EoP - Runas",
+        "EoP - Abusing Shadow Copies"
+      ]
+    },
+    {
+      "ref": "references/windows-privesc-privileges.md",
+      "file": "windows-privesc-privileges.md",
+      "title": "Windows Privilege Escalation - Impersonation and Privileged Files",
+      "source": "docs/redteam/escalation/windows-privilege-escalation.md",
+      "lines": 279,
+      "tokens_est": 4791,
+      "headings": [
+        "EoP - From local administrator to NT SYSTEM",
+        "EoP - Living Off The Land Binaries and Scripts",
+        "EoP - Impersonation Privileges",
+        "EoP - Privileged File Write",
+        "EoP - Privileged File Delete"
+      ]
+    },
+    {
+      "ref": "references/windows-privesc-cves.md",
+      "file": "windows-privesc-cves.md",
+      "title": "Windows Privilege Escalation - CVEs",
+      "source": "docs/redteam/escalation/windows-privilege-escalation.md",
+      "lines": 176,
+      "tokens_est": 2789,
+      "headings": [
+        "EoP - Common Vulnerabilities and Exposure",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/linux-privesc.md",
+      "file": "linux-privesc.md",
+      "title": "Linux - Privilege Escalation",
+      "source": "docs/redteam/escalation/linux-privilege-escalation.md",
+      "lines": 870,
+      "tokens_est": 7826,
+      "headings": [
+        "Summary",
+        "Tools",
+        "Checklists",
+        "Looting for passwords",
+        "SSH Key",
+        "Scheduled tasks",
+        "Systemd timers",
+        "SUID",
+        "Capabilities",
+        "SUDO",
+        "GTFOBins",
+        "Wildcard",
+        "Writable files",
+        "NFS Root Squashing",
+        "Shared Library",
+        "Groups",
+        "Hijack TMUX session",
+        "Kernel Exploits",
+        "References"
+      ]
+    }
+  ],
+  "total_tokens_est": 27496
+}

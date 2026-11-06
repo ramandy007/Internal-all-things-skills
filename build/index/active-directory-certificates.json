@@ -1,0 +1,231 @@
+{
+  "skill": "active-directory-certificates",
+  "title": "AD CS Certificate Attacks (ESC1-ESC15)",
+  "description": "Exploit Active Directory Certificate Services (AD CS): ESC1 through ESC15 misconfigurations, certificate template and CA abuse, enrollment agent paths, Golden Certificates and certificate-based persistence. Use when a domain has an enterprise CA, when BloodHound or Certipy output shows certificate templates or enrollment rights, when you need a certificate that authenticates as another user or machine, or when reviewing PKI hardening. Covers Certipy, Certify, bloodyAD, ForgeCert, Rubeus and PKINIT abuse.",
+  "references": [
+    {
+      "ref": "references/adcs-overview.md",
+      "file": "adcs-overview.md",
+      "title": "Active Directory - Certificate Services",
+      "source": "docs/active-directory/ad-adcs-certificate-services.md",
+      "lines": 243,
+      "tokens_est": 3154,
+      "headings": [
+        "ADCS Enumeration",
+        "Certificate Enrollment",
+        "Certifried CVE-2022-26923",
+        "Certighost CVE-2026-54121",
+        "Pass-The-Certificate",
+        "UnPAC The Hash",
+        "Common Error Messages",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/esc-overview.md",
+      "file": "esc-overview.md",
+      "title": "Active Directory - Certificate ESC Attacks",
+      "source": "docs/active-directory/ad-adcs-esc.md",
+      "lines": 19,
+      "tokens_est": 517,
+      "headings": []
+    },
+    {
+      "ref": "references/esc01.md",
+      "file": "esc01.md",
+      "title": "Active Directory - Certificate ESC1",
+      "source": "docs/active-directory/ad-adcs-esc01.md",
+      "lines": 55,
+      "tokens_est": 828,
+      "headings": [
+        "ESC1 - Misconfigured Certificate Templates",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/esc02.md",
+      "file": "esc02.md",
+      "title": "Active Directory - Certificate ESC2",
+      "source": "docs/active-directory/ad-adcs-esc02.md",
+      "lines": 23,
+      "tokens_est": 324,
+      "headings": [
+        "ESC2 - Misconfigured Certificate Templates",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/esc03.md",
+      "file": "esc03.md",
+      "title": "Active Directory - Certificate ESC3",
+      "source": "docs/active-directory/ad-adcs-esc03.md",
+      "lines": 22,
+      "tokens_est": 230,
+      "headings": [
+        "ESC3 - Misconfigured Enrollment Agent Templates",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/esc04.md",
+      "file": "esc04.md",
+      "title": "Active Directory - Certificate ESC4",
+      "source": "docs/active-directory/ad-adcs-esc04.md",
+      "lines": 43,
+      "tokens_est": 490,
+      "headings": [
+        "ESC4 - Access Control Vulnerabilities",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/esc05.md",
+      "file": "esc05.md",
+      "title": "Active Directory - Certificate ESC5",
+      "source": "docs/active-directory/ad-adcs-esc05.md",
+      "lines": 45,
+      "tokens_est": 507,
+      "headings": [
+        "ESC5 - Vulnerable PKI Object Access Control",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/esc06.md",
+      "file": "esc06.md",
+      "title": "Active Directory - Certificate ESC6",
+      "source": "docs/active-directory/ad-adcs-esc06.md",
+      "lines": 29,
+      "tokens_est": 304,
+      "headings": [
+        "ESC6 - EDITF_ATTRIBUTESUBJECTALTNAME2",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/esc07.md",
+      "file": "esc07.md",
+      "title": "Active Directory - Certificate ESC7",
+      "source": "docs/active-directory/ad-adcs-esc07.md",
+      "lines": 78,
+      "tokens_est": 711,
+      "headings": [
+        "ESC7 - Vulnerable Certificate Authority Access Control",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/esc08.md",
+      "file": "esc08.md",
+      "title": "Active Directory - Certificate ESC8",
+      "source": "docs/active-directory/ad-adcs-esc08.md",
+      "lines": 136,
+      "tokens_est": 1631,
+      "headings": [
+        "Web Enrollment Endpoint",
+        "ESC8 - Web Enrollment Relay",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/esc09.md",
+      "file": "esc09.md",
+      "title": "Active Directory - Certificate ESC9",
+      "source": "docs/active-directory/ad-adcs-esc09.md",
+      "lines": 54,
+      "tokens_est": 526,
+      "headings": [
+        "ESC9 - No Security Extension",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/esc10.md",
+      "file": "esc10.md",
+      "title": "Active Directory - Certificate ESC10",
+      "source": "docs/active-directory/ad-adcs-esc10.md",
+      "lines": 56,
+      "tokens_est": 500,
+      "headings": [
+        "ESC10 \u2013 Weak Certificate Mapping - StrongCertificateBindingEnforcement",
+        "ESC10 \u2013 Weak Certificate Mapping - CertificateMappingMethods",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/esc11.md",
+      "file": "esc11.md",
+      "title": "Active Directory - Certificate ESC11",
+      "source": "docs/active-directory/ad-adcs-esc11.md",
+      "lines": 55,
+      "tokens_est": 498,
+      "headings": [
+        "ESC11 - Relaying NTLM to ICPR",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/esc12.md",
+      "file": "esc12.md",
+      "title": "Active Directory - Certificate ESC12",
+      "source": "docs/active-directory/ad-adcs-esc12.md",
+      "lines": 63,
+      "tokens_est": 600,
+      "headings": [
+        "ESC12 - ADCS CA on YubiHSM",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/esc13.md",
+      "file": "esc13.md",
+      "title": "Active Directory - Certificate ESC13",
+      "source": "docs/active-directory/ad-adcs-esc13.md",
+      "lines": 78,
+      "tokens_est": 811,
+      "headings": [
+        "ESC13 - Issuance Policy",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/esc14.md",
+      "file": "esc14.md",
+      "title": "Active Directory - Certificate ESC14",
+      "source": "docs/active-directory/ad-adcs-esc14.md",
+      "lines": 66,
+      "tokens_est": 1075,
+      "headings": [
+        "ESC14 - altSecurityIdentities",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/esc15.md",
+      "file": "esc15.md",
+      "title": "Active Directory - Certificate ESC15",
+      "source": "docs/active-directory/ad-adcs-esc15.md",
+      "lines": 55,
+      "tokens_est": 1029,
+      "headings": [
+        "ESC15 - EKUwu Application Policies - CVE-2024-49019",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/golden-certificate.md",
+      "file": "golden-certificate.md",
+      "title": "Active Directory - Golden Certificate",
+      "source": "docs/active-directory/ad-adcs-golden-certificate.md",
+      "lines": 96,
+      "tokens_est": 1085,
+      "headings": [
+        "Obtain CA certificate",
+        "Forge Golden Certificates",
+        "Request a TGT",
+        "References"
+      ]
+    }
+  ],
+  "total_tokens_est": 14820
+}

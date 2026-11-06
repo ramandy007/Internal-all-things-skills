@@ -1,0 +1,123 @@
+{
+  "skill": "cicd-supply-chain-security",
+  "title": "CI/CD and Supply Chain Security",
+  "description": "Assess CI/CD pipelines and the software supply chain: GitHub Actions, GitLab CI, Azure DevOps, CircleCI, Buildkite, Drone CI runner abuse, hardcoded secret enumeration, and package-manager/build-file credential attacks (npm, NuGet, PyPI). Use when an engagement includes source control or CI/CD, when you find pipeline configuration or tokens, or when reviewing build-system security.",
+  "references": [
+    {
+      "ref": "references/cicd-overview.md",
+      "file": "cicd-overview.md",
+      "title": "CI/CD Attacks",
+      "source": "docs/devops/README.md",
+      "lines": 37,
+      "tokens_est": 673,
+      "headings": [
+        "Summary",
+        "Tools",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/github-actions.md",
+      "file": "github-actions.md",
+      "title": "CI/CD - GitHub Actions",
+      "source": "docs/devops/cicd-github-actions.md",
+      "lines": 181,
+      "tokens_est": 1866,
+      "headings": [
+        "Lab",
+        "Default Action",
+        "Misconfigured Actions",
+        "Self-Hosted Runners",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/gitlab-ci.md",
+      "file": "gitlab-ci.md",
+      "title": "CI/CD - Gitlab CI",
+      "source": "docs/devops/cicd-gitlab-ci.md",
+      "lines": 124,
+      "tokens_est": 1273,
+      "headings": [
+        "Gitlab Runners",
+        "Gitlab Executors",
+        "Gitlab CI/CD Variables",
+        "Persistence",
+        "Tools",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/azure-devops.md",
+      "file": "azure-devops.md",
+      "title": "CI/CD - Azure DevOps",
+      "source": "docs/devops/cicd-azure-devops.md",
+      "lines": 36,
+      "tokens_est": 238,
+      "headings": [
+        "Azure Pipelines",
+        "Secret Extractions",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/circleci.md",
+      "file": "circleci.md",
+      "title": "CI/CD - CircleCI",
+      "source": "docs/devops/cicd-circle-ci.md",
+      "lines": 17,
+      "tokens_est": 153,
+      "headings": []
+    },
+    {
+      "ref": "references/buildkite.md",
+      "file": "buildkite.md",
+      "title": "CI/CD - BuildKite",
+      "source": "docs/devops/cicd-buildkite.md",
+      "lines": 14,
+      "tokens_est": 150,
+      "headings": []
+    },
+    {
+      "ref": "references/drone-ci.md",
+      "file": "drone-ci.md",
+      "title": "CI/CD - Drone CI",
+      "source": "docs/devops/cicd-drone-ci.md",
+      "lines": 16,
+      "tokens_est": 154,
+      "headings": []
+    },
+    {
+      "ref": "references/secrets-enumeration.md",
+      "file": "secrets-enumeration.md",
+      "title": "Hardcoded Secrets Enumeration",
+      "source": "docs/devops/secrets-enumeration.md",
+      "lines": 49,
+      "tokens_est": 544,
+      "headings": [
+        "Tools",
+        "Search inside Repositories, Files and Codes",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/package-managers.md",
+      "file": "package-managers.md",
+      "title": "Package Managers and Build Files",
+      "source": "docs/devops/package-managers.md",
+      "lines": 196,
+      "tokens_est": 1587,
+      "headings": [
+        "Summary",
+        "Javascript / Typescript - package.json",
+        "Python - setup.py",
+        "Bash / sh - *.sh",
+        "Maven / Gradle",
+        "BUILD.bazel",
+        "Makefile",
+        "C# - *.csproj"
+      ]
+    }
+  ],
+  "total_tokens_est": 6638
+}

@@ -1,0 +1,45 @@
+{
+  "skill": "shell-cheatsheets",
+  "title": "Reverse and Bind Shell Cheatsheets",
+  "description": "Ready-to-use reverse shell and bind shell payloads across Bash, Python, Perl, PHP, Ruby, Netcat, PowerShell, Java, Node, Go and more, plus TTY upgrade and fully interactive Windows shell techniques. Use when you need a shell payload for a specific language or listener, when a payload must match a restricted environment, or when upgrading a dumb shell to a fully interactive one.",
+  "references": [
+    {
+      "ref": "references/reverse-shell.md",
+      "file": "reverse-shell.md",
+      "title": "Reverse Shell Cheat Sheet",
+      "source": "docs/cheatsheets/shell-reverse-cheatsheet.md",
+      "lines": 671,
+      "tokens_est": 6292,
+      "headings": [
+        "Summary",
+        "Tools",
+        "Reverse Shell",
+        "Meterpreter Shell",
+        "Spawn TTY Shell",
+        "Fully interactive reverse shell on Windows",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/bind-shell.md",
+      "file": "bind-shell.md",
+      "title": "Bind Shell",
+      "source": "docs/cheatsheets/shell-bind-cheatsheet.md",
+      "lines": 103,
+      "tokens_est": 645,
+      "headings": [
+        "Summary",
+        "Perl",
+        "Python",
+        "PHP",
+        "Ruby",
+        "Netcat Traditional",
+        "Netcat OpenBsd",
+        "Ncat",
+        "Socat",
+        "Powershell"
+      ]
+    }
+  ],
+  "total_tokens_est": 6937
+}

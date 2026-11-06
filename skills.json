@@ -1,0 +1,233 @@
+{
+  "schema": "agentskills-library-manifest/1",
+  "upstream": "https://github.com/swisskyrepo/InternalAllTheThings",
+  "upstream_commit": "203bb0c0b290bf7c9158c32d43523b8d66f292c1",
+  "spec": "https://agentskills.io/specification",
+  "license": "upstream terms - see NOTICE.md",
+  "counts": {
+    "skills": 22,
+    "references": 178
+  },
+  "skills": [
+    {
+      "name": "active-directory-certificates",
+      "title": "AD CS Certificate Attacks (ESC1-ESC15)",
+      "description": "Exploit Active Directory Certificate Services (AD CS): ESC1 through ESC15 misconfigurations, certificate template and CA abuse, enrollment agent paths, Golden Certificates and certificate-based persistence. Use when a domain has an enterprise CA, when BloodHound or Certipy output shows certificate templates or enrollment rights, when you need a certificate that authenticates as another user or machine, or when reviewing PKI hardening. Covers Certipy, Certify, bloodyAD, ForgeCert, Rubeus and PKINIT abuse.",
+      "path": "skills/active-directory-certificates",
+      "references": 18,
+      "reference_tokens_est": 14832,
+      "body_tokens_est": 2485,
+      "purpose": "Exploit Active Directory Certificate Services (AD CS): ESC1 through ESC15 misconfigurations, certificate template and CA abuse,\u2026"
+    },
+    {
+      "name": "active-directory-credentials",
+      "title": "Active Directory Credential Theft and Reuse",
+      "description": "Steal and abuse Active Directory credentials: LSASS, SAM and NTDS.dit dumping, hash capture and cracking, pass-the-hash, pass-the-key, overpass-the-hash, password spraying, GPP cpassword, LAPS, gMSA and dMSA, DSRM, passwords in user comments, pre-created computer accounts and Shadow Credentials (msDS-KeyCredentialLink). Use when you need credentials or hashes from a host or the domain, when planning a password spray, when you find a readable attribute or policy containing secrets, or when converting recovered material into a usable session.",
+      "path": "skills/active-directory-credentials",
+      "references": 14,
+      "reference_tokens_est": 14766,
+      "body_tokens_est": 2500,
+      "purpose": "Steal and abuse Active Directory credentials: LSASS, SAM and NTDS.dit dumping, hash capture and cracking, pass-the-hash,\u2026"
+    },
+    {
+      "name": "active-directory-domain-escalation",
+      "title": "Active Directory Domain and Forest Escalation",
+      "description": "Escalate from a foothold to domain or forest compromise: ZeroLogon, PrintNightmare, NoPAC/sAMAccountName spoofing, MS14-068, PrivExchange, ResetNightmare, SID-history injection, trust-key and inter-realm ticket abuse, PAM trusts and ADFS Golden SAML. Use when you have low-privileged domain access and need a path to Domain Admin or forest takeover, when a trust relationship or ADFS federation exists, or when assessing unpatched legacy domain-controller CVEs.",
+      "path": "skills/active-directory-domain-escalation",
+      "references": 11,
+      "reference_tokens_est": 11158,
+      "body_tokens_est": 2489,
+      "purpose": "Escalate from a foothold to domain or forest compromise: ZeroLogon, PrintNightmare, NoPAC/sAMAccountName spoofing, MS14-068,\u2026"
+    },
+    {
+      "name": "active-directory-enterprise-systems",
+      "title": "Enterprise Management Systems (SCCM, SCOM, WSUS, MDT)",
+      "description": "Compromise enterprise management and deployment infrastructure in Windows environments: SCCM/MECM (site takeover, network access accounts, PXE, client push), SCOM, WSUS and MDT, plus PXE boot image extraction. Use when you find SCCM, SCOM, WSUS or MDT in an internal network, when reviewing deployment credentials or task sequences, or when pivoting from a workstation to the systems that distribute privileged software and scripts.",
+      "path": "skills/active-directory-enterprise-systems",
+      "references": 5,
+      "reference_tokens_est": 6545,
+      "body_tokens_est": 2368,
+      "purpose": "Compromise enterprise management and deployment infrastructure in Windows environments: SCCM/MECM (site takeover, network access\u2026"
+    },
+    {
+      "name": "active-directory-enumeration",
+      "title": "Active Directory Enumeration and Recon",
+      "description": "Enumerate an Active Directory domain with PowerView, BloodHound, NetExec, impacket and native Windows tools: users, groups, computers, trusts, GPOs, ACLs/ACEs, AD-integrated DNS, shares, RODC, machine account quota and the AD recycle bin. Use when starting an AD engagement, when mapping domain objects and permissions, when you hold any valid domain credentials or a null session and need to find attack paths, or when reviewing AD security posture. Includes AD operations from Linux (ldapsearch, impacket, netexec, bloodyAD).",
+      "path": "skills/active-directory-enumeration",
+      "references": 11,
+      "reference_tokens_est": 19277,
+      "body_tokens_est": 2425,
+      "purpose": "Enumerate an Active Directory domain with PowerView, BloodHound, NetExec, impacket and native Windows tools: users, groups,\u2026"
+    },
+    {
+      "name": "active-directory-kerberos",
+      "title": "Active Directory Kerberos Attacks",
+      "description": "Attack Kerberos in Active Directory: Kerberoasting, AS-REP roasting, Timeroasting, ticket forging (golden, silver, bronze bit), S4U2Self/S4U2Proxy, and unconstrained, constrained and resource-based constrained delegation abuse. Use when you have domain credentials and want service-account or privileged-account hashes, when a host or account is trusted for delegation, when you need to forge, convert or renew tickets, or when explaining Kerberos delegation paths. Covers Rubeus, impacket, NetExec, PowerView and ticket manipulation.",
+      "path": "skills/active-directory-kerberos",
+      "references": 9,
+      "reference_tokens_est": 11150,
+      "body_tokens_est": 2498,
+      "purpose": "Attack Kerberos in Active Directory: Kerberoasting, AS-REP roasting, Timeroasting, ticket forging (golden, silver, bronze bit),\u2026"
+    },
+    {
+      "name": "active-directory-lateral-movement",
+      "title": "Active Directory Lateral Movement, Relay and Coercion",
+      "description": "Move laterally and coerce authentication in Active Directory: NTLM relay (SMB, LDAP, HTTP, AD CS), Kerberos relay, authentication coercion (PetitPotam, PrinterBug, DFSCoerce, Coerce) and DCOM execution. Use when you have credentials or a machine account and need code execution on another host, when a target lacks SMB or LDAP signing, when you need a victim to authenticate to your listener, or when chaining coercion into relay or AD CS.",
+      "path": "skills/active-directory-lateral-movement",
+      "references": 4,
+      "reference_tokens_est": 10404,
+      "body_tokens_est": 2297,
+      "purpose": "Move laterally and coerce authentication in Active Directory: NTLM relay (SMB, LDAP, HTTP, AD CS), Kerberos relay, authentication\u2026"
+    },
+    {
+      "name": "aws-security",
+      "title": "AWS Security Assessment",
+      "description": "Assess and attack AWS: access-token and key abuse, IAM privilege escalation, IMDSv1/v2 metadata SSRF, S3 bucket exposure, EC2, Lambda, SSM, DynamoDB, Cognito, enumeration and IOC detection. Use when an engagement includes AWS, when you find AWS keys or an SSRF into instance metadata, when reviewing IAM policies for escalation paths, or when triaging AWS incident indicators.",
+      "path": "skills/aws-security",
+      "references": 13,
+      "reference_tokens_est": 12463,
+      "body_tokens_est": 2494,
+      "purpose": "Assess and attack AWS: access-token and key abuse, IAM privilege escalation, IMDSv1/v2 metadata SSRF, S3 bucket exposure, EC2,\u2026"
+    },
+    {
+      "name": "azure-entra-security",
+      "title": "Azure and Entra ID Security",
+      "description": "Assess and attack Microsoft Azure and Entra ID (Azure AD): token and refresh-token abuse, enumeration with AzureHound/ROADtools, IAM objects (users, devices, service principals, managed identities), Conditional Access bypass, AD Connect and cloud sync, Key Vault, Runbooks, Intune, Storage Blob, Web Apps, Container Registry, Azure DevOps, Office 365 phishing and persistence, and aka.ms shortcuts. Use when an engagement includes Azure or Entra ID, when you hold a token or credentials, or when reviewing cloud tenant configuration.",
+      "path": "skills/azure-entra-security",
+      "references": 22,
+      "reference_tokens_est": 29202,
+      "body_tokens_est": 2496,
+      "purpose": "Assess and attack Microsoft Azure and Entra ID (Azure AD): token and refresh-token abuse, enumeration with AzureHound/ROADtools,\u2026"
+    },
+    {
+      "name": "c2-frameworks",
+      "title": "Command and Control Frameworks",
+      "description": "Operate command-and-control frameworks: Cobalt Strike (listeners, profiles, beacons, kits and artifacts), Metasploit Framework and Mythic C2. Use when setting up a C2 server or listener, when configuring a beacon or payload profile, when troubleshooting a callback, or when customizing a C2 kit.",
+      "path": "skills/c2-frameworks",
+      "references": 5,
+      "reference_tokens_est": 8378,
+      "body_tokens_est": 2357,
+      "purpose": "Operate command-and-control frameworks: Cobalt Strike (listeners, profiles, beacons, kits and artifacts), Metasploit Framework\u2026"
+    },
+    {
+      "name": "cicd-supply-chain-security",
+      "title": "CI/CD and Supply Chain Security",
+      "description": "Assess CI/CD pipelines and the software supply chain: GitHub Actions, GitLab CI, Azure DevOps, CircleCI, Buildkite, Drone CI runner abuse, hardcoded secret enumeration, and package-manager/build-file credential attacks (npm, NuGet, PyPI). Use when an engagement includes source control or CI/CD, when you find pipeline configuration or tokens, or when reviewing build-system security.",
+      "path": "skills/cicd-supply-chain-security",
+      "references": 9,
+      "reference_tokens_est": 6639,
+      "body_tokens_est": 2334,
+      "purpose": "Assess CI/CD pipelines and the software supply chain: GitHub Actions, GitLab CI, Azure DevOps, CircleCI, Buildkite, Drone CI\u2026"
+    },
+    {
+      "name": "container-security",
+      "title": "Docker and Kubernetes Security",
+      "description": "Assess Docker and Kubernetes: exposed Docker socket, privileged containers, host mounts and namespace escapes, Kubernetes API and RBAC misconfiguration, kubelet and etcd exposure, and in-container credential discovery. Use when an engagement includes containers or a cluster, when you land inside a pod, or when reviewing container and Kubernetes hardening.",
+      "path": "skills/container-security",
+      "references": 2,
+      "reference_tokens_est": 8233,
+      "body_tokens_est": 2456,
+      "purpose": "Assess Docker and Kubernetes: exposed Docker socket, privileged containers, host mounts and namespace escapes, Kubernetes API and\u2026"
+    },
+    {
+      "name": "ibm-cloud-security",
+      "title": "IBM Cloud Security",
+      "description": "IBM Cloud reference notes for managed databases (PostgreSQL, MongoDB) and object storage (COS): supported engines, storage classes, endpoints, access patterns and service characteristics, for when IBM Cloud appears in engagement scope or in leaked configuration. Use when you hold an IBM Cloud API key, a COS service-instance ID or a *.cloud-object-storage.appdomain.cloud endpoint and need to know what the service is, how it is reached and what data it holds, or when reviewing IBM Cloud storage and database exposure. Documents the platform only - there is no IBM Cloud attack toolchain here; for S3-style bucket mechanics use aws-security.",
+      "path": "skills/ibm-cloud-security",
+      "references": 2,
+      "reference_tokens_est": 2990,
+      "body_tokens_est": 1658,
+      "purpose": "IBM Cloud reference notes for managed databases (PostgreSQL, MongoDB) and object storage (COS): supported engines, storage\u2026"
+    },
+    {
+      "name": "internal-engagement-playbook",
+      "title": "Internal Engagement Playbook",
+      "description": "Plan and run an authorized internal-network penetration test end to end: scoping, host and network discovery, Active Directory and cloud attack-surface mapping, phase-by-phase checklists, evidence collection, and vulnerability report writing. Use when starting an internal engagement, deciding the next phase of an attack path, planning recon coverage, writing a pentest report or finding, or when source-code review or mobile-app testing is part of the engagement. Routes to the specialized skills in this library (Active Directory, cloud, red team, C2, containers, MSSQL, CI/CD).",
+      "path": "skills/internal-engagement-playbook",
+      "references": 4,
+      "reference_tokens_est": 13175,
+      "body_tokens_est": 1789,
+      "purpose": "Plan and run an authorized internal-network penetration test end to end: scoping, host and network discovery, Active Directory\u2026"
+    },
+    {
+      "name": "mssql-security",
+      "title": "Microsoft SQL Server Attacks",
+      "description": "Attack and audit Microsoft SQL Server: enumeration, audit checks, credential harvesting (linked servers, logins, SQL agent jobs), linked-database crawling, and OS command execution via xp_cmdshell, OLE automation and CLR assemblies. Use when MSSQL is reachable with credentials or integrated authentication, when you need a command-execution path from a database, or when reviewing MSSQL configuration.",
+      "path": "skills/mssql-security",
+      "references": 5,
+      "reference_tokens_est": 6509,
+      "body_tokens_est": 2129,
+      "purpose": "Attack and audit Microsoft SQL Server: enumeration, audit checks, credential harvesting (linked servers, logins, SQL agent jobs),\u2026"
+    },
+    {
+      "name": "redteam-defense-evasion",
+      "title": "Defense Evasion (AMSI, Defender, EDR)",
+      "description": "Evade Windows and Linux defenses: AMSI bypass, PowerShell and ETW logging evasion, Windows Defender and AppLocker/WDAC bypass, EDR unhooking and direct syscalls, DPAPI secret extraction, proxy traversal and OPSEC failure avoidance. Use when a payload is blocked, when you must reduce telemetry, when dumping DPAPI secrets, or when reviewing OPSEC before an operation.",
+      "path": "skills/redteam-defense-evasion",
+      "references": 11,
+      "reference_tokens_est": 57613,
+      "body_tokens_est": 2485,
+      "purpose": "Evade Windows and Linux defenses: AMSI bypass, PowerShell and ETW logging evasion, Windows Defender and AppLocker/WDAC bypass,\u2026"
+    },
+    {
+      "name": "redteam-initial-access",
+      "title": "Initial Access",
+      "description": "Gain initial access during red team operations: phishing, ClickFix, HTML smuggling, malicious Office documents (Excel, Word, VSTO), Windows download-and-execute one-liners, using credentials on Windows hosts, and web attack-surface mapping. Use when planning an initial foothold, when crafting a payload or phishing lure, when you hold credentials for a Windows host, or when choosing an execution technique that survives mail and proxy filters.",
+      "path": "skills/redteam-initial-access",
+      "references": 10,
+      "reference_tokens_est": 21143,
+      "body_tokens_est": 2397,
+      "purpose": "Gain initial access during red team operations: phishing, ClickFix, HTML smuggling, malicious Office documents (Excel, Word,\u2026"
+    },
+    {
+      "name": "redteam-persistence",
+      "title": "Persistence (Windows, Linux, RDP)",
+      "description": "Establish persistence on Windows, Linux and RDP sessions: registry, scheduled tasks, services, WMI, startup folders, DLL search order, domain-level persistence (GPO, SID history, AdminSDHolder, DCShadow), and Linux cron/systemd/SSH backdoors. Use after achieving access, when you must survive reboots and credential rotation, or when reviewing persistence coverage for detection.",
+      "path": "skills/redteam-persistence",
+      "references": 5,
+      "reference_tokens_est": 12663,
+      "body_tokens_est": 2499,
+      "purpose": "Establish persistence on Windows, Linux and RDP sessions: registry, scheduled tasks, services, WMI, startup folders, DLL search\u2026"
+    },
+    {
+      "name": "redteam-pivoting",
+      "title": "Network Pivoting and Tunneling",
+      "description": "Pivot through internal networks: SOCKS proxies, port forwarding, SSH tunnels, Chisel, Ligolo-ng, Meterpreter routes and multi-hop pivoting. Use when a compromised host can reach otherwise unreachable subnets, when you need to tunnel tooling through a foothold, or when mapping network reachability during lateral movement.",
+      "path": "skills/redteam-pivoting",
+      "references": 2,
+      "reference_tokens_est": 3409,
+      "body_tokens_est": 1955,
+      "purpose": "Pivot through internal networks: SOCKS proxies, port forwarding, SSH tunnels, Chisel, Ligolo-ng, Meterpreter routes and multi-hop\u2026"
+    },
+    {
+      "name": "redteam-privilege-escalation",
+      "title": "Host Privilege Escalation (Windows and Linux)",
+      "description": "Escalate privileges on compromised Windows and Linux hosts: enumeration checklists, service and scheduled-task abuse, unquoted service paths, kernel and driver exploits, impersonation privileges, SUID/capabilities/sudo/GTFOBins, NFS root squashing and local credential looting. Use after obtaining a low-privileged shell, when you need local admin or SYSTEM/root, or when triaging a host for escalation paths.",
+      "path": "skills/redteam-privilege-escalation",
+      "references": 6,
+      "reference_tokens_est": 27511,
+      "body_tokens_est": 2443,
+      "purpose": "Escalate privileges on compromised Windows and Linux hosts: enumeration checklists, service and scheduled-task abuse, unquoted\u2026"
+    },
+    {
+      "name": "security-cheatsheets",
+      "title": "Security Command Cheatsheets",
+      "description": "Quick command references for internal and red team work: Mimikatz modules, PowerShell one-liners and download cradles, network host discovery, hash cracking with Hashcat and John, kiosk escape and jail breakout, Liferay, AS/400 and miscellaneous Windows/Linux tricks. Use when you need exact syntax fast for a tool, a discovery command, a hashcat mode, or an escape technique.",
+      "path": "skills/security-cheatsheets",
+      "references": 8,
+      "reference_tokens_est": 27437,
+      "body_tokens_est": 1347,
+      "purpose": "Quick command references for internal and red team work: Mimikatz modules, PowerShell one-liners and download cradles, network\u2026"
+    },
+    {
+      "name": "shell-cheatsheets",
+      "title": "Reverse and Bind Shell Cheatsheets",
+      "description": "Ready-to-use reverse shell and bind shell payloads across Bash, Python, Perl, PHP, Ruby, Netcat, PowerShell, Java, Node, Go and more, plus TTY upgrade and fully interactive Windows shell techniques. Use when you need a shell payload for a specific language or listener, when a payload must match a restricted environment, or when upgrading a dumb shell to a fully interactive one.",
+      "path": "skills/shell-cheatsheets",
+      "references": 2,
+      "reference_tokens_est": 6937,
+      "body_tokens_est": 1148,
+      "purpose": "Ready-to-use reverse shell and bind shell payloads across Bash, Python, Perl, PHP, Ruby, Netcat, PowerShell, Java, Node, Go and\u2026"
+    }
+  ]
+}

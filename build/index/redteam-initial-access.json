@@ -1,0 +1,162 @@
+{
+  "skill": "redteam-initial-access",
+  "title": "Red Team Initial Access",
+  "description": "Gain initial access during red team operations: phishing, ClickFix, HTML smuggling, malicious Office documents (Excel, Word, VSTO), Windows download-and-execute one-liners, using credentials on Windows hosts, and web attack-surface mapping. Use when planning an initial foothold, when crafting a payload or phishing lure, when you hold credentials for a Windows host, or when choosing an execution technique that survives mail and proxy filters.",
+  "references": [
+    {
+      "ref": "references/initial-access.md",
+      "file": "initial-access.md",
+      "title": "Initial Access",
+      "source": "docs/redteam/access/initial-access.md",
+      "lines": 198,
+      "tokens_est": 1667,
+      "headings": [
+        "Summary",
+        "Complex Chains",
+        "Container",
+        "Trigger",
+        "Payload",
+        "Code Signing",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/phishing.md",
+      "file": "phishing.md",
+      "title": "Phishing",
+      "source": "docs/redteam/access/phishing.md",
+      "lines": 87,
+      "tokens_est": 915,
+      "headings": [
+        "Opsec Fails",
+        "GoPhish",
+        "Evilginx",
+        "Device Code Phishing",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/clickfix.md",
+      "file": "clickfix.md",
+      "title": "ClickFix",
+      "source": "docs/redteam/access/clickfix.md",
+      "lines": 35,
+      "tokens_est": 404,
+      "headings": [
+        "FileFix",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/html-smuggling.md",
+      "file": "html-smuggling.md",
+      "title": "HTML Smuggling",
+      "source": "docs/redteam/access/html-smuggling.md",
+      "lines": 46,
+      "tokens_est": 370,
+      "headings": [
+        "Summary",
+        "Description",
+        "Executable storage"
+      ]
+    },
+    {
+      "ref": "references/office-excel.md",
+      "file": "office-excel.md",
+      "title": "Office - Attacks",
+      "source": "docs/redteam/access/office-attacks.md",
+      "lines": 225,
+      "tokens_est": 3084,
+      "headings": [
+        "Summary",
+        "Office Products Features",
+        "Office Default Passwords",
+        "Excel"
+      ]
+    },
+    {
+      "ref": "references/office-word.md",
+      "file": "office-word.md",
+      "title": "Office Attacks - Word",
+      "source": "docs/redteam/access/office-attacks.md",
+      "lines": 481,
+      "tokens_est": 5103,
+      "headings": [
+        "Word"
+      ]
+    },
+    {
+      "ref": "references/office-macro-development.md",
+      "file": "office-macro-development.md",
+      "title": "Office Attacks - VSTO and Macro Development",
+      "source": "docs/redteam/access/office-attacks.md",
+      "lines": 93,
+      "tokens_est": 1774,
+      "headings": [
+        "Visual Studio Tools for Office (VSTO)",
+        "Office Macro Development",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/windows-download-execute.md",
+      "file": "windows-download-execute.md",
+      "title": "Windows - Download and execute methods",
+      "source": "docs/redteam/access/windows-download-execute.md",
+      "lines": 123,
+      "tokens_est": 928,
+      "headings": [
+        "Downloaded files location",
+        "Powershell",
+        "Cmd",
+        "Cscript / Wscript",
+        "Mshta",
+        "Rundll32",
+        "Regasm / Regsvc @subTee",
+        "Regsvr32 @subTee",
+        "Odbcconf",
+        "Msbuild",
+        "Certutil",
+        "Bitsadmin",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/windows-using-credentials.md",
+      "file": "windows-using-credentials.md",
+      "title": "Windows - Using credentials",
+      "source": "docs/redteam/access/windows-using-credentials.md",
+      "lines": 500,
+      "tokens_est": 4927,
+      "headings": [
+        "Summary",
+        "Get Credentials",
+        "netexec",
+        "Impacket",
+        "RDP Remote Desktop Protocol",
+        "Powershell Remoting Protocol",
+        "WinRM Protocol",
+        "WMI Protocol",
+        "SSH Protocol",
+        "Other Methods",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/web-attack-surface.md",
+      "file": "web-attack-surface.md",
+      "title": "Web Attack Surface",
+      "source": "docs/redteam/access/web-attack-surface.md",
+      "lines": 158,
+      "tokens_est": 1967,
+      "headings": [
+        "Summary",
+        "Enumerate Subdomains",
+        "Technology Discovery",
+        "Subdomain Takover",
+        "References"
+      ]
+    }
+  ],
+  "total_tokens_est": 21139
+}

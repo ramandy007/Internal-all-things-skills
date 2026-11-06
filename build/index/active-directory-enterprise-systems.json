@@ -1,0 +1,70 @@
+{
+  "skill": "active-directory-enterprise-systems",
+  "title": "Enterprise Management Systems (SCCM, SCOM, WSUS, MDT)",
+  "description": "Compromise enterprise management and deployment infrastructure in Windows environments: SCCM/MECM (site takeover, network access accounts, PXE, client push), SCOM, WSUS and MDT, plus PXE boot image extraction. Use when you find SCCM, SCOM, WSUS or MDT in an internal network, when reviewing deployment credentials or task sequences, or when pivoting from a workstation to the systems that distribute privileged software and scripts.",
+  "references": [
+    {
+      "ref": "references/sccm.md",
+      "file": "sccm.md",
+      "title": "Deployment - SCCM",
+      "source": "docs/active-directory/deployment-sccm.md",
+      "lines": 385,
+      "tokens_est": 4080,
+      "headings": [
+        "SCCM Application Deployment",
+        "SCCM Enumeration",
+        "SCCM Shares",
+        "SCCM Configuration Manager",
+        "SCCM Relay",
+        "SCCM Persistence",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/scom.md",
+      "file": "scom.md",
+      "title": "Deployment - SCOM",
+      "source": "docs/active-directory/deployment-scom.md",
+      "lines": 64,
+      "tokens_est": 681,
+      "headings": [
+        "Tools",
+        "SCOM \u201cRunAs\u201d credentials",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/wsus.md",
+      "file": "wsus.md",
+      "title": "Deployment - WSUS",
+      "source": "docs/active-directory/deployment-wsus.md",
+      "lines": 16,
+      "tokens_est": 369,
+      "headings": []
+    },
+    {
+      "ref": "references/mdt.md",
+      "file": "mdt.md",
+      "title": "Deployment - MDT",
+      "source": "docs/active-directory/deployment-mdt.md",
+      "lines": 43,
+      "tokens_est": 762,
+      "headings": [
+        "Deployment Share",
+        "References"
+      ]
+    },
+    {
+      "ref": "references/pxe-boot-image.md",
+      "file": "pxe-boot-image.md",
+      "title": "Internal - PXE Boot Image",
+      "source": "docs/active-directory/internal-pxe-boot-image.md",
+      "lines": 56,
+      "tokens_est": 646,
+      "headings": [
+        "References"
+      ]
+    }
+  ],
+  "total_tokens_est": 6538
+}
